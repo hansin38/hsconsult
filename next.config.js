@@ -1,13 +1,7 @@
 /** @type {import('next').NextConfig} */
-const withImages = require('next-images');
-
-const nextConfig = withImages({
+const nextConfig = {
   // reactStrictMode: false,
   trailingSlash: true,
-  fileExtensions: ['jpg', 'jpeg', 'png', 'gif'],
-  experimental: {
-    scrollRestoration: true,
-  },
   webpack(config) {
     config.resolve.alias['@'] = '/src';
     config.module.rules.push({
@@ -35,11 +29,6 @@ const nextConfig = withImages({
     });
     return config;
   },
-  images: {
-    disableStaticImages: true,
-    path: '',
-    loader: 'akamai',
-  },
-});
+};
 
 module.exports = nextConfig;

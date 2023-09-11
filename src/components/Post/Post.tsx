@@ -1,6 +1,6 @@
+import React from 'react';
 import { IPost } from '@/components/Post/Post.types';
 import { PostContainer } from '@/components/Post//Post.constants';
-import React from 'react';
 
 const Post = ({ ...props }: IPost) => {
   const { title, body, id } = props;

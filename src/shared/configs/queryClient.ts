@@ -1,6 +1,6 @@
+import { QueryClient } from 'react-query';
 import { IContext, IVariables } from '@/shared/types/common.types';
 
-import { QueryClient } from 'react-query';
 
 const queryClient = new QueryClient({
   defaultOptions: {

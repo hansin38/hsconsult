@@ -1,8 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
-
+import merge from 'lodash/merge';
 import { IMutationProps } from '@/shared/types/common.types';
 import { REQUESTS_OPERATION } from '@/shared/constants/common.constants';
-import merge from 'lodash/merge';
 
 const apiBase = function (defaultConfig: AxiosRequestConfig) {
   const api = axios.create(defaultConfig);

@@ -1,6 +1,6 @@
-import { Font } from '@/shared/styles';
 import React from 'react';
 import styled from '@emotion/styled';
+import { Font } from '@/shared/styles';
 
 export const PostContainer = styled.section<React.CSSProperties>`
   display: flex;

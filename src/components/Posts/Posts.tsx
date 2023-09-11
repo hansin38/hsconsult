@@ -1,6 +1,6 @@
+import React from 'react';
 import Post from '@/components/Post/Post';
 import { PostsContainer } from '@/components/Posts/Posts.constants';
-import React from 'react';
 import useQueryPosts from '@/components/Posts/Posts.hook';
 
 const Posts = () => {
