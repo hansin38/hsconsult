@@ -5,9 +5,6 @@ import { useRouter } from 'next/router';
 import { menu } from '@/shared/constants/common.constants';
 import { SnbContainer } from './Snb.styles';
 
-
-
-
 const Snb = (): React.ReactElement => {
   const router = useRouter();
   return (

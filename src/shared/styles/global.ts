@@ -6,6 +6,7 @@ export const GlobalStyles = css`
   html,
   body {
     font-family: 'Pretendard', 'Noto Sans KR', 'sans-serif';
+    background-color: black;
   }
 
   /* reset */
