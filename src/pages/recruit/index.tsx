@@ -1,15 +1,11 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import { CommonContainer } from '@/shared/constants/pages';
-import Header from '@/components/layout/Header/Header';
-
-
+import Layout from '@/components/layout/Layout';
 
 const RecruitPage: NextPage = (): React.ReactElement => {
   return (
-    <CommonContainer>
-      <Header />
-    </CommonContainer>
+    <Layout>
+    </Layout>
   );
 };
 
