@@ -5,7 +5,7 @@ import Layout from '@/components/layout/Layout';
 
 
 const Home: NextPage = (): React.ReactElement => {
-  return <Layout>
+  return <Layout transparentHeader>
       a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />a<br />
     </Layout>;
 };

@@ -14,6 +14,12 @@ export const HeaderContainer = styled.header<{transparent?: boolean}>`
     background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
     margin-bottom: -90px;
+    & > strong {
+      color: #ffffff;
+    }
+    & > .gnb {
+      color: #ffffff;
+    }
   ` : css`
     border-bottom: 1px solid #EFEFEF;
     background-color: #ffffff;
@@ -21,6 +27,9 @@ export const HeaderContainer = styled.header<{transparent?: boolean}>`
   &:hover {
     border-bottom: 1px solid #EFEFEF;
     background-color: #ffffff;
+    & > strong {
+      color: #000000;
+    }
     & > .gnb {
       color: #000000;
     }
