@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import {} from './Header.constants';
 import { css } from '@emotion/react';
-import Gnb from '@/components/Gnb/Gnb';
-import Snb from '@/components/Snb/Snb';
+import Gnb from '@/components/layout/Header/Gnb/Gnb';
+import Snb from '@/components/layout/Header/Snb/Snb';
 import { IHeader } from '@/components/layout/Header/Header.types';
 import { HeaderContainer } from './Header.styles';
 
