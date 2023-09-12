@@ -29,6 +29,9 @@ const nextConfig = {
     });
     return config;
   },
+  compilerOptions: {
+    emotion: true,
+  }
 };
 
 module.exports = nextConfig;

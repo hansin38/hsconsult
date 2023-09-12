@@ -6,13 +6,12 @@ export default function MyDocument() {
   return (
     <Html>
       <Head>
-        <title>한신콘설탄트</title>
         <meta name="description" content="한신콘설탄트" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
         <meta name="theme-color" content="#000000" />
         <meta name="keywords" content="한신콘설탄트" />
         <meta name="author" content="sanguneo, juno" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <body>
         <Main />

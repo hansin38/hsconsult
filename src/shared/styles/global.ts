@@ -5,7 +5,7 @@ export const GlobalStyles = css`
 
   html,
   body {
-    font-family: 'Noto Sans KR', 'sans-serif';
+    font-family: 'Pretendard', 'Noto Sans KR', 'sans-serif';
   }
 
   /* reset */

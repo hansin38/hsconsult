@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header/Header';
 
 
 
-const Home: NextPage = (): React.ReactElement => {
+const IntroOverviewPage: NextPage = (): React.ReactElement => {
   return (
     <CommonContainer>
       <Header />
@@ -13,4 +13,4 @@ const Home: NextPage = (): React.ReactElement => {
   );
 };
 
-export default Home;
+export default IntroOverviewPage;
