@@ -3,13 +3,12 @@ import {} from './Snb.constants';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { menu } from '@/shared/constants/common.constants';
-import { ISnb } from './Snb.types';
 import { SnbContainer } from './Snb.styles';
 
 
 
 
-const Snb = (props: ISnb): React.ReactElement => {
+const Snb = (): React.ReactElement => {
   const router = useRouter();
   return (
     <SnbContainer className={'snb'}>

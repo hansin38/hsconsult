@@ -3,11 +3,10 @@ import {} from './Header.constants';
 import { css } from '@emotion/react';
 import Gnb from '@/components/Gnb/Gnb';
 import Snb from '@/components/Snb/Snb';
-import { IHeader } from './Header.types';
 import { HeaderContainer } from './Header.styles';
 
 
-const Header = (props: IHeader): React.ReactElement => {
+const Header = (): React.ReactElement => {
   const headerContainerRef = useRef(null);
   useEffect(() => {
     if (!headerContainerRef?.current) return;
