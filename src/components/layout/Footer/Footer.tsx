@@ -1,11 +1,9 @@
 import React from 'react';
-import {} from './Footer.constants';
-import { IFooter } from './Footer.types';
 import { Contacts, Copyright, FooterContainer } from './Footer.styles';
 import { css } from '@emotion/react';
 
 
-const Footer = (props: IFooter): React.ReactElement => {
+const Footer = (): React.ReactElement => {
   return (
     <FooterContainer>
       <strong css={css`font-size: 24px;color: #f4f4f4;`}>Hanshin</strong>
