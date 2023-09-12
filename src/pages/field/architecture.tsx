@@ -5,7 +5,7 @@ import Header from '@/components/layout/Header/Header';
 
 
 
-const FieldArchitectPage: NextPage = (): React.ReactElement => {
+const FieldArchitecturePage: NextPage = (): React.ReactElement => {
   return (
     <CommonContainer>
       <Header />
@@ -13,4 +13,4 @@ const FieldArchitectPage: NextPage = (): React.ReactElement => {
   );
 };
 
-export default FieldArchitectPage;
+export default FieldArchitecturePage;

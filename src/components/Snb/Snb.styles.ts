@@ -10,6 +10,7 @@ export const SnbContainer = styled.div`
   box-sizing: border-box;
   padding: 12px 80px;
   border-radius: 0 0 4px 4px;
+  background-color: #ffffff;
   & > div {
     & > a {
       display: flex;
@@ -17,6 +18,12 @@ export const SnbContainer = styled.div`
       height: 48px;
       justify-content: center;
       align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      &.active {
+        font-weight: 600;
+      }
     }
   }
 `;
