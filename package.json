@@ -2,13 +2,15 @@
   "name": "boilerplate-next",
   "version": "0.2.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
     "predeploy": "next build",
     "deploy": "gh-pages -d out -t true",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "comp": "node compgen.js"
   },
   "dependencies": {
     "axios": "^1.5.0",
