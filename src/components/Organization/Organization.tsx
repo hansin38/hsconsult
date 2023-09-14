@@ -19,7 +19,7 @@ const Organization = (): React.ReactElement => {
       <OrganizationWrapper>
         <OrganizationTitle>조직구성</OrganizationTitle>
         <OrganizationContent>
-          <Image src="/images/organization-detail.png" layout={'fill'} alt="조직도 상세" />
+          <Image src="/images/organization-detail.png" layout={'fill'} objectFit="contain" alt="조직도 상세" />
         </OrganizationContent>
       </OrganizationWrapper>
       <OrganizationExecutivesGroup>
