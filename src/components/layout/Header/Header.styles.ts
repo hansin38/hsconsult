@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-export const HeaderContainer = styled.header<{transparent?: boolean}>`
+export const HeaderContainer = styled.header<{ transparent?: boolean }>`
   width: 100%;
   display: flex;
   height: 90px;
@@ -10,22 +10,26 @@ export const HeaderContainer = styled.header<{transparent?: boolean}>`
   position: relative;
   box-sizing: border-box;
   padding: 0 80px;
-  ${props => props.transparent ? css`
-    background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-    margin-bottom: -90px;
-    & > strong {
-      color: #ffffff;
-    }
-    & > .gnb {
-      color: #ffffff;
-    }
-  ` : css`
-    border-bottom: 1px solid #EFEFEF;
-    background-color: #ffffff;
-  `}
+  z-index: 1;
+  ${(props) =>
+    props.transparent
+      ? css`
+          background-color: transparent;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          margin-bottom: -90px;
+          & > strong {
+            color: #ffffff;
+          }
+          & > .gnb {
+            color: #ffffff;
+          }
+        `
+      : css`
+          border-bottom: 1px solid #efefef;
+          background-color: #ffffff;
+        `}
   &:hover {
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
     background-color: #ffffff;
     & > strong {
       color: #000000;

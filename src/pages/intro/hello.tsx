@@ -7,9 +7,7 @@ import Hello from '@/components/Hello/Hello';
 const IntroHelloPage: NextPage = (): React.ReactElement => {
   return (
     <Layout transparentHeader>
-      {/* 상단 이미지 영역 */}
-      <div style={{ width: '100%', height: 240, background: 'transparent', borderBottom: '1px solid #ddd' }}></div>
-      <ContentsLayout>
+      <ContentsLayout topImgSrc="/images/aboutus.jpg">
         <Hello />
       </ContentsLayout>
     </Layout>

@@ -23,6 +23,5 @@ export const ContentsLayoutItemRight = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: purple;
   height: auto;
 `;

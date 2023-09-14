@@ -18,9 +18,9 @@ const Aside = (): React.ReactElement => {
           item.subPath.forEach((subPath) => {
             const isActiveSubPath = path.includes(subPath.path);
             result.push(
-              <AsideItem key={subPath.path} active={isActiveSubPath}>
-                <Link href={subPath.path}>{subPath.name}</Link>
-              </AsideItem>
+              <Link href={subPath.path} key={subPath.path}>
+                <AsideItem active={isActiveSubPath}>{subPath.name}</AsideItem>
+              </Link>
             );
           });
         }

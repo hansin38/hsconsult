@@ -3,7 +3,16 @@ import styled from '@emotion/styled';
 
 export const ContentsLayoutContainer = styled.div<React.CSSProperties>`
   width: 100%;
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 68px;
+`;
+export const ContentsLayoutTopImageWrapper = styled.div<React.CSSProperties>`
+  position: relative;
+  width: 100%;
+  background: #070c14;
+  height: 240px;
 `;
 export const ContentsLayoutWrapper = styled.div<React.CSSProperties>`
   display: flex;

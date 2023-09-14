@@ -2,7 +2,6 @@
   "name": "hscont",
   "version": "0.2.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "next dev -p 3002",
     "build": "next build",
