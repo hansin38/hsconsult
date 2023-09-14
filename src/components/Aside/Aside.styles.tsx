@@ -14,6 +14,16 @@ export const AsideItem = styled.div<IAsideItemProps>`
   line-height: 24px;
 `;
 
+export const AsideTabItem = styled.div<IAsideItemProps>`
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  color: ${(props) => (props.active ? '#000' : '#7c7c7c')};
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+`;
 export const AsideContainer = styled.div<React.CSSProperties>`
   display: flex;
   width: 100%;
