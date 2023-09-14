@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { IOverviewContainerTabsItem } from './Overview.types';
 
 export const OverviewContainer = styled.div<React.CSSProperties>`
   display: flex;
@@ -12,9 +13,6 @@ export const OverviewContainerTabs = styled.div<React.CSSProperties>`
   gap: 12px;
 `;
 
-interface IOverviewContainerTabsItem extends React.CSSProperties {
-  active?: boolean;
-}
 export const OverviewContainerTabsItem = styled.div<IOverviewContainerTabsItem>`
   border: ${(props) => (props.active ? '2px solid #0031b0' : '1px solid #efefef')};
   background: ${(props) => (props.active ? '#F4F7FF' : '#ffffff')};

@@ -21,7 +21,7 @@ const BreadCrumb = (): React.ReactElement => {
         );
         if (item.subPath) {
           const subPath = item.subPath.find((subPath) => path.includes(subPath.path));
-          const activeTab = subPath.tabs.find((tab) => tab.path === query.tab);
+          const activeTab = subPath?.tabs?.find((tab) => tab.path === query.tab);
           subPath &&
             result.push(
               <Fragment key={subPath.path}>

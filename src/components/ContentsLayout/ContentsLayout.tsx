@@ -11,7 +11,7 @@ const ContentsLayout = ({ topImgSrc, children }: IContentLayout): React.ReactEle
     <ContentsLayoutContainer>
       {topImgSrc && (
         <ContentsLayoutTopImageWrapper>
-          <Image src={topImgSrc} layout={'fill'} objectFit="contain" alt="상단 이미지 영역" />
+          <Image src={topImgSrc} layout="fill" objectFit="contain" alt="상단 이미지 영역" />
         </ContentsLayoutTopImageWrapper>
       )}
       <ContentsLayoutWrapper>

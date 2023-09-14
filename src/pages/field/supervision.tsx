@@ -6,7 +6,7 @@ import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
 const FieldSupervisionPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/aboutus.jpg">
+      <ContentsLayout topImgSrc="/images/field-top-image.jpg">
         <></>
       </ContentsLayout>
     </Layout>
