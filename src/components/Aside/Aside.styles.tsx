@@ -18,4 +18,5 @@ export const AsideContainer = styled.div<React.CSSProperties>`
   display: flex;
   width: 100%;
   flex-direction: column;
+  border: 1px solid #efefef;
 `;

@@ -1,8 +1,45 @@
+import Image from 'next/image';
 import React from 'react';
-import { OrganizationContainer } from 'src/components/Organization/Organization.styles';
+import {
+  OrganizationContainer,
+  OrganizationContent,
+  OrganizationExecutivesGroup,
+  OrganizationTitle,
+  OrganizationWrapper,
+  ProfileWrapper,
+  SubWrapper,
+  Title,
+  Wrapper,
+} from 'src/components/Organization/Organization.styles';
+import { INITAL_EXECUTIVES_GROUP } from './Organization.constants';
 
 const Organization = (): React.ReactElement => {
-  return <OrganizationContainer></OrganizationContainer>;
+  return (
+    <OrganizationContainer>
+      <OrganizationWrapper>
+        <OrganizationTitle>조직구성</OrganizationTitle>
+        <OrganizationContent>
+          <Image src="/images/organization-detail.png" layout={'fill'} alt="조직도 상세" />
+        </OrganizationContent>
+      </OrganizationWrapper>
+      <OrganizationExecutivesGroup>
+        <OrganizationTitle>임원소개</OrganizationTitle>
+        {INITAL_EXECUTIVES_GROUP.map((group) => (
+          <Wrapper key={group.position}>
+            <Title>{group.position}</Title>
+            <SubWrapper>
+              {group.composition.map((composit) => (
+                <ProfileWrapper key={composit.name}>
+                  <Image src="/images/hongbacksa.jpg" width={120} height={160} alt={`${composit.name} ${group.position}`} />
+                  {composit.name} {group.position}
+                </ProfileWrapper>
+              ))}
+            </SubWrapper>
+          </Wrapper>
+        ))}
+      </OrganizationExecutivesGroup>
+    </OrganizationContainer>
+  );
 };
 
 export default Organization;

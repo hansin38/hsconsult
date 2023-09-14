@@ -5,7 +5,6 @@ import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
 import Organization from '@/components/Organization/Organization';
 
 const IntroOrganizationPage: NextPage = (): React.ReactElement => {
-  console.log('test');
   return (
     <Layout transparentHeader>
       <ContentsLayout topImgSrc="/images/organization.jpg">
