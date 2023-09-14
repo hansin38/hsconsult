@@ -8,11 +8,12 @@ type TPage = number; // 0 < page
 type TId = number; // 0 < id
 
 export interface IArticle {
+  timestamp: Date;
   title: string;
   content: string;
   name: string;
-  email?: string;
-  phone?: string;
+  email: string;
+  phone: string;
 }
 
 interface IParams {
