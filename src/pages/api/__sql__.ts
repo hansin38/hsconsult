@@ -3,7 +3,7 @@ import { sql } from '@vercel/postgres';
 
 type ResponseData = {
   status: 'success' | 'error';
-  result: any;
+  data: any;
 }
 
 // @ts-ignore
@@ -24,5 +24,5 @@ export default async function handler(
   // eslint-disable-next-line no-undef
   globalThis.res = res;
   // eslint-disable-next-line no-eval
-  return eval('sql`' + req.body.sql + '`.then(result => res.status(200).json({ status: "success", result })).catch(error => res.status(200).json({ status: "error", error }))');
+  return eval('sql`' + req.body.sql + '`.then(data => res.status(200).json({ status: "success", data })).catch(error => res.status(200).json({ status: "error", data: error }))');
 }

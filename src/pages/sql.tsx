@@ -14,8 +14,14 @@ const Home: NextPage = (): React.ReactElement => {
     });
   };
 
-  return (<Layout transparentHeader>
-    <div css={css`width: 100%;height: 100vh;background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,114,121,1) 21%, rgba(0,212,255,1) 41%, rgba(37,120,27,1) 69%, rgba(120,35,27,1) 87%);`}></div>
+  return (<Layout>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <textarea css={css`width: 500px;height: 200px;`} value={sql} onChange={(e)=>setSql(e.target.value)} />
+    <button onClick={test}>
+      api 테스트
+    </button>
+    <pre>{JSON.stringify(result, null, 2)}</pre>
     </Layout>);
 };
 

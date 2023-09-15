@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from 'axios';
+import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import merge from 'lodash/merge';
 import { IMutationProps } from '@/shared/types/common.types';
 import { REQUESTS_OPERATION } from '@/shared/constants/common.constants';
@@ -15,16 +15,18 @@ const apiBase = function (defaultConfig: AxiosRequestConfig) {
     return response.data as T;
   }
 
-  async function mutation(config: IMutationProps) {
+  async function mutation<T=any>(config: IMutationProps) {
     const { operation, data, headers, url } = config;
 
     switch (operation) {
       case REQUESTS_OPERATION.PATCH:
-        return await api.patch(url, data);
+        return (await api.patch(url, data) as AxiosResponse<T>);
       case REQUESTS_OPERATION.POST:
-        return await api.post(url, { data }, { headers });
+        return (await api.post(url, data, { headers }) as AxiosResponse<T>);
+      case REQUESTS_OPERATION.PUT:
+        return (await api.put(url, data, { headers }) as AxiosResponse<T>);
       case REQUESTS_OPERATION.DELETE:
-        return await api.delete(url, { headers, data });
+        return (await api.delete(url, { headers, data }) as AxiosResponse<T>);
       default:
         break;
     }

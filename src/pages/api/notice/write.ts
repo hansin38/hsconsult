@@ -10,10 +10,10 @@ export default async function handler(
   res: NextApiResponse<ResponseData>
 ) {
   if (req.method.toUpperCase() !== 'PUT') return res.status(400).end();
-  const { title, content, name, email, phone, password } = req.body;
+  const { title, content } = req.body;
   const data = await sql`
-INSERT INTO inquiry (timestamp, title, content, name, email, phone, reply, password)
-VALUES (${Math.floor(new Date().getTime() / 1000)}, ${title}, ${content}, ${name}, ${email}, ${phone}, true, ${password});
+INSERT INTO notice (timestamp, title, content)
+VALUES (${Math.floor(new Date().getTime() / 1000)}, ${title}, ${content});
 `;
   return res.status(200).json({ status: 'success', data });
 }

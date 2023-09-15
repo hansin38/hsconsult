@@ -29,3 +29,13 @@ WHERE id = 3;
 
 DELETE FROM notice
 WHERE id = 3;
+
+
+-- 페이지네이션을 위한 쿼리
+SELECT * FROM article
+ORDER BY id -- 원하는 정렬 기준으로 변경할 수 있습니다.
+LIMIT 10 -- 한 페이지에 보여줄 행의 개수를 설정합니다.
+OFFSET 20; -- 몇 번째 페이지를 가져올 것인지 설정합니다.
+
+-- 전체 쿼리 결과의 개수를 가져오는 쿼리
+SELECT COUNT(*) FROM article;

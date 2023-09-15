@@ -16,10 +16,10 @@ export default async function handler(
   const { limit = 10, page } = req.query as unknown as {limit?: number; page: number};
   const [{ rows: [{ count: total }] }, { rows: list }] = await Promise.all([
 sql`
-    SELECT COUNT(*) FROM inquiry;
+    SELECT COUNT(*) FROM notice;
 `,
 sql`
-  SELECT * FROM inquiry
+  SELECT * FROM notice
   ORDER BY id
   LIMIT ${Number(limit)}
   OFFSET ${Number(limit) * (Number(page) - 1)};

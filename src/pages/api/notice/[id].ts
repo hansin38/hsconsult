@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { sql } from '@vercel/postgres';
-import doWrite from './write';
 
 type ResponseData = {
   status: 'success' | 'error';
@@ -10,7 +9,7 @@ type ResponseData = {
 const doGet = async (req, res) => {
   const { id } = req.query;
   const { rows } = await sql`
-SELECT * FROM inquiry WHERE id = ${id};
+SELECT * FROM notice WHERE id = ${id};
 `;
   if (rows.length === 0) return res.status(404).json({ status: 'error', data: 'Not Found' });
   return res.status(200).json({ status: 'success', data: rows[0] });
@@ -20,7 +19,7 @@ const doPatch = async (req, res) => {
   const { id } = req.query;
   const updateBody = req.body.update.map(([keys, value]) => `${keys} = ${value}`).join(', ');
   const { rows } = await sql`
-UPDATE inquiry
+UPDATE notice
 ${updateBody}
 WHERE id = ${id};
 `;
@@ -31,10 +30,12 @@ WHERE id = ${id};
 const doDelete = async (req, res) => {
   const { id } = req.query;
   await sql`
-DELETE FROM inquiry WHERE id = ${id};
+DELETE FROM notice WHERE id = ${id};
 `;
   return res.status(200).json({ status: 'success' });
 };
+
+
 
 
 export default async function handler(
@@ -49,8 +50,6 @@ export default async function handler(
       return doPatch(req, res);
     case 'DELETE':
       return doDelete(req, res);
-    case 'PUT':
-      return doWrite(req, res);
   }
   return res.status(405).end();
 }
