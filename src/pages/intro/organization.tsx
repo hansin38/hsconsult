@@ -6,7 +6,7 @@ import Organization from '@/components/Organization/Organization';
 
 const IntroOrganizationPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/organization.jpg">
         <Organization />
       </ContentsLayout>

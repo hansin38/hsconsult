@@ -6,7 +6,7 @@ import History from '@/components/History/History';
 
 const IntroHistoryPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/history.jpg">
         <History />
       </ContentsLayout>

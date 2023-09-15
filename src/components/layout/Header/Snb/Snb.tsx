@@ -13,7 +13,7 @@ const Snb = (): React.ReactElement => {
         <div key={gnbItem.path}>
           {gnbItem.subPath.map(subItem =>
             <Link key={subItem.path}
-                  href={`/${gnbItem.path}/${subItem.path}`}
+                  href={subItem.path === 'index' ? `/${gnbItem.path}` : `/${gnbItem.path}/${subItem.path}`}
                   className={router.pathname === `/${gnbItem.path}/${subItem.path}` ? 'active' : ''}>
               {subItem.name}
             </Link>)}

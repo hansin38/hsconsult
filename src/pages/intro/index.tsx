@@ -6,7 +6,7 @@ import Hello from '@/components/Hello/Hello';
 
 const IntroHelloPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/aboutus.jpg">
         <Hello />
       </ContentsLayout>

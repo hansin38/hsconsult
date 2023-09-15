@@ -11,7 +11,7 @@ export const menu = [
     path: 'intro',
     name: '회사소개',
     subPath: [
-      { path: 'hello', name: '인사말' },
+      { path: 'index', name: '인사말' },
       { path: 'history', name: '회사개요' },
       { path: 'overview', name: '회사연혁' },
       { path: 'organization', name: '조직도' },
@@ -22,7 +22,7 @@ export const menu = [
     name: '사업분야',
     subPath: [
       {
-        path: 'architecture',
+        path: 'index',
         name: '설계분야',
         tabs: [
           { path: 'electrical-field', name: '전기분야' },
@@ -46,7 +46,7 @@ export const menu = [
     path: 'customer',
     name: '고객지원',
     subPath: [
-      { path: 'notice', name: '공지사항' },
+      { path: 'index', name: '공지사항' },
       { path: 'qna', name: '1:1문의' },
     ],
   },
