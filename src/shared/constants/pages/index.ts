@@ -6,8 +6,10 @@ export const CommonContainer = styled.main<React.CSSProperties>`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  box-sizing: border-box;
 `;
+
+
 
 export const getExampleState = (store) => store.example;
 export const setExampleState = (store) => store.setExample;

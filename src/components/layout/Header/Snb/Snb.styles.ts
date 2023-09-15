@@ -9,9 +9,19 @@ export const SnbContainer = styled.div`
   position: absolute;
   box-sizing: border-box;
   padding: 12px 80px;
-  border-radius: 0 0 4px 4px;
-  background-color: #ffffff;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    right: -50%;
+    bottom: 0;
+    content: '';
+    border-radius: 0 0 4px 4px;
+    background-color: #ffffff;
+    z-index: 0;
+  }
   & > div {
+    z-index: 1;
     & > a {
       display: flex;
       width: 136px;

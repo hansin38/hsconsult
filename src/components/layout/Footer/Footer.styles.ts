@@ -2,7 +2,6 @@ import styled from '@emotion/styled';
 
 export const FooterContainer = styled.footer`
   position: relative;
-  background-color: #444444;
   padding: 48px 80px;
   display: flex;
   flex-direction: column;
@@ -10,6 +9,18 @@ export const FooterContainer = styled.footer`
   width: 100%;
   height: fit-content;
   margin-top: auto;
+  max-width: 1440px;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    right: -50%;
+    bottom: 0;
+    z-index: -1;
+    content: '';
+    display: block;
+    background-color: #444444;
+  }
 `;
 
 export const Contacts = styled.div`
