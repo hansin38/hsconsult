@@ -8,7 +8,7 @@ import { GnbContainer } from './Gnb.styles';
 const Gnb = (): React.ReactElement => {
   return (
     <GnbContainer className={'gnb'}>
-      {menu.map(gnbItem => <Link key={gnbItem.path} href={`/${gnbItem.path}`}>{gnbItem.name}</Link>)}
+      {menu.map(gnbItem => <Link key={gnbItem.path} href={`${gnbItem.target}`}>{gnbItem.name}</Link>)}
     </GnbContainer>
   );
 };

@@ -1,6 +1,6 @@
 const nextConfig = {
   // reactStrictMode: false,
-  trailingSlash: true,
+  trailingSlash: false,
   compiler: {
     emotion: true,
   },

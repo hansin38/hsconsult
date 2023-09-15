@@ -10,19 +10,21 @@ export const menu = [
   {
     path: 'intro',
     name: '회사소개',
+    target: '/intro/hello',
     subPath: [
-      { path: 'index', name: '인사말' },
-      { path: 'history', name: '회사개요' },
-      { path: 'overview', name: '회사연혁' },
+      { path: 'hello', name: '인사말' },
+      { path: 'overview', name: '회사개요' },
+      { path: 'history', name: '회사연혁' },
       { path: 'organization', name: '조직도' },
     ],
   },
   {
     path: 'field',
     name: '사업분야',
+    target: '/field/architecture',
     subPath: [
       {
-        path: 'index',
+        path: 'architecture',
         name: '설계분야',
         tabs: [
           { path: 'electrical-field', name: '전기분야' },
@@ -45,22 +47,25 @@ export const menu = [
   {
     path: 'customer',
     name: '고객지원',
+    target: '/customer/notice',
     subPath: [
-      { path: 'index', name: '공지사항' },
+      { path: 'notice', name: '공지사항' },
       { path: 'qna', name: '1:1문의' },
     ],
   },
   {
     path: 'recruit',
     name: '채용정보',
+    target: '/recruit',
     subPath: [
-      { path: 'index', name: '인재상' },
-      { path: 'talent', name: '채용안내' },
+      { path: 'talent', name: '인재상' },
+      { path: 'index', name: '채용안내' },
     ],
   },
   {
     path: 'contact',
     name: 'Contact',
+    target: '/contact',
     subPath: [{ path: 'index', name: '찾아오시는길' }],
   },
 ];
