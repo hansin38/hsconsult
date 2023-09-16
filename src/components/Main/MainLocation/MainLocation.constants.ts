@@ -7,5 +7,5 @@ export const location = {
   branch: {
     name: '지사',
     address: '지사주소',
-  }
+  },
 };

@@ -1,10 +1,8 @@
 import React from 'react';
-import {} from './MainNotice.constants';
-import { IMainNotice } from './MainNotice.types';
 import { MainNoticeTable, MainNoticeTableHeader, MainNoticeTableRow } from './MainNotice.styles';
 
 
-const MainNotice = (props: IMainNotice): React.ReactElement => {
+const MainNotice = (): React.ReactElement => {
   return (
     <MainNoticeTable>
       <MainNoticeTableHeader>
