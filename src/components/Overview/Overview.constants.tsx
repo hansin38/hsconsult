@@ -1,30 +1,8 @@
 export const INITIAL_OVERVIEW_DATA = [
-  {
-    yearbundle: '2010-2014',
-    years: [
-      { year: 2014, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2013, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2012, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2011, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2010, content: [{ description: '설명을 적어주세요' }] },
-    ],
-  },
-  {
-    yearbundle: '2015-2023',
-    years: [
-      {
-        year: 2023,
-        content: [{ description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }],
-      },
-      { year: 2022, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2021, content: [{ description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }] },
-
-      { year: 2020, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2019, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2018, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2017, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2016, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2015, content: [{ description: '설명을 적어주세요' }] },
-    ],
-  },
+  { title: '회사명', content: '한신콘설탄트', imagePath: '/images/company.jpg' },
+  { title: '대표이사', content: '홍길동', imagePath: '/images/ceo.jpg' },
+  { title: '설립일', content: '0000년 00월 00일', imagePath: '/images/establishment-date.jpg' },
+  { title: '업종', content: '기타 엔지니어링 서비스업', imagePath: '/images/sectors.jpg' },
+  { title: '직원수', content: '290명', imagePath: '/images/employees.jpg' },
+  { title: '이메일', content: 'hansin@hansin.co.kr', imagePath: '/images/email.jpg' },
 ];

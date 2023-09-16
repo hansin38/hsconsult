@@ -1,30 +1,17 @@
-import React, { useState } from 'react';
-import { OverviewContainer, OverviewContainerTabs, OverviewContainerTabsItem, OverviewContent, OverviewContentItem } from 'src/components/Overview/Overview.styles';
+import React from 'react';
+import Image from 'next/image';
+import { OverviewContainer, OverviewItemCard } from 'src/components/Overview/Overview.styles';
 import { INITIAL_OVERVIEW_DATA } from './Overview.constants';
-
 const Overview = (): React.ReactElement => {
-  const [activeTab, setActiveTab] = useState(INITIAL_OVERVIEW_DATA[1].yearbundle);
   return (
     <OverviewContainer>
-      <OverviewContainerTabs>
-        {INITIAL_OVERVIEW_DATA.map((overview) => (
-          <OverviewContainerTabsItem key={overview.yearbundle} active={overview.yearbundle === activeTab} onClick={() => setActiveTab(overview.yearbundle)}>
-            {overview.yearbundle}
-          </OverviewContainerTabsItem>
-        ))}
-      </OverviewContainerTabs>
-      <OverviewContent>
-        {INITIAL_OVERVIEW_DATA.find((overview) => overview.yearbundle === activeTab).years.map((year) => (
-          <OverviewContentItem key={year.year}>
-            <div>{year.year}</div>
-            <ul>
-              {year.content.map((content) => (
-                <li key={content.description}>{content.description}</li>
-              ))}
-            </ul>
-          </OverviewContentItem>
-        ))}
-      </OverviewContent>
+      {INITIAL_OVERVIEW_DATA.map((history) => (
+        <OverviewItemCard key={history.imagePath}>
+          <Image src={history.imagePath} width={48} height={48} alt="회사개요 카드 이미지 아이콘" />
+          <h3>{history.title}</h3>
+          <h5>{history.content}</h5>
+        </OverviewItemCard>
+      ))}
     </OverviewContainer>
   );
 };

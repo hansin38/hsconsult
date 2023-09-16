@@ -1,6 +1,6 @@
 import React from 'react';
-import { Contacts, Copyright, FooterContainer } from './Footer.styles';
 import { css } from '@emotion/react';
+import { Contacts, Copyright, FooterContainer } from './Footer.styles';
 
 
 const Footer = (): React.ReactElement => {

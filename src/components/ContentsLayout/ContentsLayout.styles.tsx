@@ -13,6 +13,26 @@ export const ContentsLayoutTopImageWrapper = styled.div<React.CSSProperties>`
   width: 100%;
   background: #070c14;
   height: 240px;
+  &::before {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    background-image: linear-gradient(to left, transparent 0, black 50%);
+  }
+  &::after {
+    z-index: 1;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    background-image: linear-gradient(to right, transparent 0, black 50%);
+  }
 `;
 export const ContentsLayoutWrapper = styled.div<React.CSSProperties>`
   display: flex;

@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
 export const HeaderContainer = styled.header<{ transparent?: boolean }>`
+  z-index: 10;
   width: 100%;
   max-width: 1440px;
   display: flex;
@@ -11,7 +12,6 @@ export const HeaderContainer = styled.header<{ transparent?: boolean }>`
   position: relative;
   box-sizing: border-box;
   padding: 0 80px;
-  z-index: 1;
   &::before {
     position: absolute;
     top: 0;
