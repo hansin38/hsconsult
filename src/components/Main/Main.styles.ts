@@ -2,11 +2,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 
-export const CarouselContainer = styled.div`
-  width: 100%;
-  display: block;
-`;
-
 export const GoDetail = styled(Link)`
   display: flex;
   padding: 0 12px;
@@ -115,6 +110,7 @@ export const CarouselSection = styled(Section)`
     background-color: #000000;
   }
   height: 590px;
+  padding: 0;
 `;
 
 export const BusinessSection = styled(Section)`

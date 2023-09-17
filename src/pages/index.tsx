@@ -1,15 +1,17 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Layout from '@/components/layout/Layout';
-import { ActionSection, BusinessSection, CarouselContainer, CarouselSection, GoDetail, LocationSection, Section, SectionBody, SectionBodyItem, SectionDescription, SectionTitle } from '@/components/Main/Main.styles';
+import { ActionSection, BusinessSection, CarouselSection, GoDetail, LocationSection, Section, SectionBody, SectionBodyItem, SectionDescription, SectionTitle } from '@/components/Main/Main.styles';
 import MainNotice from '@/components/Main/MainNotice/MainNotice';
 import MainLocation from '@/components/Main/MainLocation/MainLocation';
+import Carousel from '@/components/Carousel/Carousel';
 
 const Home: NextPage = (): React.ReactElement => {
   return (<Layout transparentHeader>
     <CarouselSection>
-      <CarouselContainer>
-      </CarouselContainer>
+      <Carousel>
+
+      </Carousel>
     </CarouselSection>
     <BusinessSection>
       <SectionTitle>비즈니스 분야</SectionTitle>
