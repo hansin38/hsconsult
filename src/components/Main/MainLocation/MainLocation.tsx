@@ -1,6 +1,6 @@
 import React from 'react';
 import { location } from './MainLocation.constants';
-import { MainLocationContainer, MainLocationMap, MainLocationTab, MainLocationTabs } from './MainLocation.styles';
+import { MainLocationContainer, MainLocationMap, MainLocationMapContainer, MainLocationTab, MainLocationTabs } from './MainLocation.styles';
 
 type TTab = keyof typeof location;
 const MainLocation = (): React.ReactElement => {
@@ -23,7 +23,10 @@ const MainLocation = (): React.ReactElement => {
           {location.branch.name}
         </MainLocationTab>
       </MainLocationTabs>
-      <MainLocationMap src={`about:blank#${selected}`}/>
+      <MainLocationMapContainer>
+        <MainLocationMap src={location[selected].src}
+                allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+      </MainLocationMapContainer>
       <strong>{location[selected].address}</strong>
     </MainLocationContainer>
   );

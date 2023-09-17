@@ -32,11 +32,19 @@ export const MainLocationTab = styled.label`
   }
 `;
 
-export const MainLocationMap = styled.img`
+export const MainLocationMapContainer = styled.div`
+  position: relative;
   width: 100%;
   aspect-ratio: 628 / 353;
+  overflow: hidden;
   background-color: dimgray;
   border-radius: 4px;
   border: 1px solid #EFEFEF;
   margin-bottom: 12px;
+`;
+
+export const MainLocationMap = styled.iframe`
+  width: 100%;
+  height: 200%;
+  margin-top: -25%;
 `;

@@ -56,13 +56,13 @@ const Home: NextPage = (): React.ReactElement => {
     </ActionSection>
     <LocationSection multi>
       <Section>
-        <SectionTitle largeGap>공지사항<GoDetail href={''}/></SectionTitle>
+        <SectionTitle largeGap>공지사항<GoDetail href={'/customer/notice'}/></SectionTitle>
         <SectionBody>
           <MainNotice />
         </SectionBody>
       </Section>
       <Section>
-        <SectionTitle largeGap>찾아오시는 길<GoDetail href={''}/></SectionTitle>
+        <SectionTitle largeGap>찾아오시는 길<GoDetail href={'/contact/directions'}/></SectionTitle>
         <SectionBody>
           <MainLocation />
         </SectionBody>

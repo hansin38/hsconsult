@@ -9,6 +9,8 @@ import {
   SectionTitle,
 } from 'src/components/ContactDirections/ContactDirections.styles';
 import BreadCrumb from '@/components/BreadCrumb/BreadCrumb';
+import { MainLocationMap, MainLocationMapContainer } from '@/components/Main/MainLocation/MainLocation.styles';
+import { location } from '@/components/Main/MainLocation/MainLocation.constants';
 
 const ContactDirections = (): React.ReactElement => {
   return (
@@ -25,9 +27,10 @@ const ContactDirections = (): React.ReactElement => {
         <ContactDirectionsSection>
           <SectionTitle>본사</SectionTitle>
           <SectionContents>
-            <div>
-              <Image src="/images/map.jpg" layout={'fill'} alt="상단 이미지 영역" />
-            </div>
+            <MainLocationMapContainer>
+              <MainLocationMap src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9328239231695!2d127.11803179999998!3d37.509502499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5790ba59227%3A0x334aded18ec03fd1!2z7ISc7Jq47Yq567OE7IucIOyGoe2MjOq1rCDqsIDrnb3roZwgMjQw!5e0!3m2!1sko!2skr!4v1694957054008!5m2!1sko!2skr'}
+                               allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            </MainLocationMapContainer>
             <div>
               <div>
                 <div>주소</div>
@@ -59,9 +62,10 @@ const ContactDirections = (): React.ReactElement => {
         <ContactDirectionsSection>
           <SectionTitle>지사</SectionTitle>
           <SectionContents>
-            <div>
-              <Image src="/images/map.jpg" layout={'fill'} alt="상단 이미지 영역" />
-            </div>
+            <MainLocationMapContainer>
+              <MainLocationMap src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9328239231695!2d127.11803179999998!3d37.509502499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5790ba59227%3A0x334aded18ec03fd1!2z7ISc7Jq47Yq567OE7IucIOyGoe2MjOq1rCDqsIDrnb3roZwgMjQw!5e0!3m2!1sko!2skr!4v1694957054008!5m2!1sko!2skr'}
+                               allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+            </MainLocationMapContainer>
             <div>
               <div>
                 <div>주소</div>
