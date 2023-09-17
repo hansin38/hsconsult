@@ -1,9 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { ContentsLayoutContainer, ContentsLayoutTopImageWrapper, ContentsLayoutWrapper } from 'src/components/ContentsLayout/ContentsLayout.styles';
+import {
+  ContentsLayoutContainer,
+  ContentsLayoutItemLeft,
+  ContentsLayoutItemRight,
+  ContentsLayoutTopImageWrapper,
+  ContentsLayoutWrapper,
+} from 'src/components/ContentsLayout/ContentsLayout.styles';
 import Aside from '../Aside/Aside';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
-import { ContentsLayoutItemLeft, ContentsLayoutItemRight } from './ContentsLayout.constants';
 import { IContentLayout } from './ContentsLayout.types';
 
 const ContentsLayout = ({ topImgSrc, children }: IContentLayout): React.ReactElement => {

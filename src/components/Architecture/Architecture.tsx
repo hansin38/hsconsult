@@ -7,16 +7,14 @@ import {
   ArchitectureContainerTabs,
   ArchitectureContainerTabsItem,
   ArchitectureImageWrapper,
-  ArchitectureTextWrpper,
   ArchitectureTitle,
 } from 'src/components/Architecture/Architecture.styles';
-import { menu } from '@/shared/constants/common.constants';
+import { Nullable } from '@/shared/types/common.types';
 import ElectricalField from './components/ElectricalField/ElectricalField';
 
 const Architecture = (): React.ReactElement => {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState<Nullable<string | string[]>>('electrical-field');
   const router = useRouter();
-  const path = router.pathname.split('/').slice(1);
   const query = router.query;
 
   useEffect(() => {

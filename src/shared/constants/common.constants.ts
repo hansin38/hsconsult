@@ -56,16 +56,16 @@ export const menu = [
   {
     path: 'recruit',
     name: '채용정보',
-    target: '/recruit',
+    target: '/recruit/talent',
     subPath: [
       { path: 'talent', name: '인재상' },
-      { path: 'index', name: '채용안내' },
+      { path: 'recruit-information', name: '채용안내' },
     ],
   },
   {
     path: 'contact',
     name: 'Contact',
-    target: '/contact',
-    subPath: [{ path: 'index', name: '찾아오시는길' }],
+    target: '/contact/directions',
+    subPath: [{ path: 'directions', name: '찾아오시는길' }],
   },
 ];

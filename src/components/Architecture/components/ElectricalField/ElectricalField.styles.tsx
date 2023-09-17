@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Section } from '@/components/Main/Main.styles';
 
 export const ElectricalFieldTextWrpper = styled.div<React.CSSProperties>`
   display: flex;
@@ -19,4 +20,70 @@ export const ElectricalFieldTextWrpper = styled.div<React.CSSProperties>`
     line-height: 24px;
     word-break: keep-all;
   }
+`;
+
+export const ElectricalFieldSection = styled(Section)`
+  padding: 0;
+`;
+export const ElectricalFieldSliderWrpper = styled.div<React.CSSProperties>`
+  display: flex;
+  padding: 24px 24px 0px 24px;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+`;
+export const SliderTextWrpper = styled.div<React.CSSProperties>`
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  & > h5 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    word-break: keep-all;
+  }
+  & > h6 {
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+`;
+export const SliderItem = styled.div<{ bgImage: string }>`
+  background-image: url(${(props) => props.bgImage});
+  height: 363px;
+  width: 100%;
+  background-size: cover;
+`;
+export const SliderArrow = styled.div<{ arrow: 'left' | 'right' }>`
+  z-index: 1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  &::before {
+    content: ${(props) => (props.arrow === 'left' ? '"<" !important' : '">" !important')};
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &:hover {
+    color: inherit;
+    opacity: 1;
+    background: #000;
+  }
+`;
+export const SliderWrapper = styled.div<React.CSSProperties>`
+  padding: 24px 24px 0px 24px;
+  position: relative;
 `;

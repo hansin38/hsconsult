@@ -1,17 +1,17 @@
 import React from 'react';
 import type { NextPage } from 'next';
-import Layout from '@/components/layout/Layout';
 import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
-import Architecture from '@/components/Architecture/Architecture';
+import Layout from '@/components/layout/Layout';
+import RecruitInformation from '@/components/RecruitInformation/RecruitInformation';
 
-const FieldSupervisionPage: NextPage = (): React.ReactElement => {
+const RecruitInformationPage: NextPage = (): React.ReactElement => {
   return (
     <Layout transparentHeader>
       <ContentsLayout topImgSrc="/images/field-top-image.jpg">
-        <Architecture />
+        <RecruitInformation />
       </ContentsLayout>
     </Layout>
   );
 };
 
-export default FieldSupervisionPage;
+export default RecruitInformationPage;

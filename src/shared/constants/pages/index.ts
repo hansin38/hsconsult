@@ -7,9 +7,8 @@ export const CommonContainer = styled.main<React.CSSProperties>`
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 `;
-
-
 
 export const getExampleState = (store) => store.example;
 export const setExampleState = (store) => store.setExample;

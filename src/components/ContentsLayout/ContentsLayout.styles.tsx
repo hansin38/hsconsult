@@ -45,17 +45,14 @@ export const ContentsLayoutWrapper = styled.div<React.CSSProperties>`
 
 export const ContentsLayoutItemLeft = styled.div<React.CSSProperties>`
   display: flex;
-  flex-basis: 193px;
   flex-direction: column;
-  width: 100%;
-  background: orange;
+  width: 193px;
   height: auto;
 `;
 
 export const ContentsLayoutItemRight = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background: purple;
+  width: calc(100% - 193px);
   height: auto;
 `;

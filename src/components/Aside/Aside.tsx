@@ -9,16 +9,19 @@ const Aside = (): React.ReactElement => {
   const path = router.pathname.split('/').slice(1);
   const query = router.query;
 
+  console.log(path);
+
   const renderAsideItems = useCallback(() => {
     const result = [];
     menu.forEach((item) => {
       const isMainPath = path.includes(item.path);
       if (isMainPath) {
-        result.push();
         if (item.subPath) {
           item.subPath.forEach((subPath) => {
             const isActiveSubPath = path.includes(subPath.path);
             const isTab = subPath.tabs;
+            console.log(subPath);
+
             result.push(
               <Fragment key={subPath.name}>
                 <Link href={`${subPath.path}${isTab ? `/?tab=${subPath.tabs[0].path}` : ''}`}>
