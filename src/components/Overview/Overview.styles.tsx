@@ -3,14 +3,16 @@ import styled from '@emotion/styled';
 
 export const OverviewContainer = styled.div<React.CSSProperties>`
   position: relative;
-  display: flex;
+  display: grid;
   gap: 24px;
   margin-top: 34px;
   flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
 `;
 
 export const OverviewItemCard = styled.div<React.CSSProperties>`
-  width: 338px;
+  //width:px;
+  flex: 1;
   border-radius: 4px;
   border: 1px solid #efefef;
   background: #fff;
@@ -19,6 +21,7 @@ export const OverviewItemCard = styled.div<React.CSSProperties>`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   & > h3 {
     margin-top: 32px;
     color: #000;
@@ -34,5 +37,7 @@ export const OverviewItemCard = styled.div<React.CSSProperties>`
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    height: 48px;
+    margin-bottom: -24px;
   }
 `;

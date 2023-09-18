@@ -2,13 +2,13 @@ import React from 'react';
 import type { NextPage } from 'next';
 import Layout from '@/components/layout/Layout';
 import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
-import Architecture from '@/components/Architecture/Architecture';
+import Supervision from '@/components/Supervision/Supervision';
 
 const FieldSupervisionPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
       <ContentsLayout topImgSrc="/images/field-top-image.jpg">
-        <Architecture />
+        <Supervision />
       </ContentsLayout>
     </Layout>
   );

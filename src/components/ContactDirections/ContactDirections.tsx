@@ -40,17 +40,21 @@ const ContactDirections = (): React.ReactElement => {
               </div>
               <div>
                 <div>전화</div>
-                <div>02-569-3380</div>
+                <div>051-254-8141</div>
               </div>
               <div>
                 <div>팩스</div>
-                <div>02-569-3380</div>
+                <div>051-254-8648</div>
+              </div>
+              <div>
+                <div>이메일</div>
+                <div><a href="mailto:hscont@chol.com">hscont@chol.com</a></div>
               </div>
             </div>
           </SectionContents>
         </ContactDirectionsSection>
         <ContactDirectionsSection>
-          <SectionTitle>지사</SectionTitle>
+          <SectionTitle>서울지사</SectionTitle>
           <SectionContents>
             <MainLocationMapContainer>
               <MainLocationMap src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9328239231695!2d127.11803179999998!3d37.509502499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5790ba59227%3A0x334aded18ec03fd1!2z7ISc7Jq47Yq567OE7IucIOyGoe2MjOq1rCDqsIDrnb3roZwgMjQw!5e0!3m2!1sko!2skr!4v1694957054008!5m2!1sko!2skr'}
@@ -65,11 +69,15 @@ const ContactDirections = (): React.ReactElement => {
               </div>
               <div>
                 <div>전화</div>
-                <div>02-569-3380</div>
+                <div>02-417-6761</div>
               </div>
               <div>
                 <div>팩스</div>
-                <div>02-569-3380</div>
+                <div>02-417-3302</div>
+              </div>
+              <div>
+                <div>이메일</div>
+                <div><a href="mailto:hansin38@chol.com">hansin38@chol.com</a></div>
               </div>
             </div>
           </SectionContents>

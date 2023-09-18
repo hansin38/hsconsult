@@ -12,6 +12,7 @@ export const BreadCrumbItem = styled.div<IBreadCrumbItemProps>`
 
 export const BreadCrumbContainer = styled.div<React.CSSProperties>`
   display: flex;
+  margin-bottom: 12px;
   & > ${BreadCrumbItem} {
     &:not(:last-child):after {
       content: ' > ';

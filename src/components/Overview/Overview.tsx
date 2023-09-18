@@ -9,7 +9,7 @@ const Overview = (): React.ReactElement => {
         <OverviewItemCard key={history.imagePath}>
           <Image src={history.imagePath} width={48} height={48} alt="회사개요 카드 이미지 아이콘" />
           <h3>{history.title}</h3>
-          <h5>{history.content}</h5>
+          <h5 dangerouslySetInnerHTML={{ __html: history.content }} />
         </OverviewItemCard>
       ))}
     </OverviewContainer>

@@ -9,9 +9,7 @@ import Carousel from '@/components/Carousel/Carousel';
 const Home: NextPage = (): React.ReactElement => {
   return (<Layout transparentHeader>
     <CarouselSection>
-      <Carousel>
-
-      </Carousel>
+      <Carousel />
     </CarouselSection>
     <BusinessSection>
       <SectionTitle>비즈니스 분야</SectionTitle>
