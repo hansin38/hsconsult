@@ -7,7 +7,7 @@ import Overview from '@/components/Overview/Overview';
 const IntroOverviewPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/history.jpg">
+      <ContentsLayout topImgSrc="/images/cover_overview.webp" title={'회사개요'}>
         <Overview />
       </ContentsLayout>
     </Layout>

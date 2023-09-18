@@ -42,10 +42,11 @@ export const SectionDescription = styled.div<{ color?: string }>`
   ${({ color }) => color ? `color: ${color};` : ''}
 `;
 
-export const SectionBodyItem = styled.div`
+export const SectionBodyItem = styled(Link)`
   display: flex;
   flex-direction: column;
   flex: 1;
+  cursor: pointer;
   & > img {
     margin-bottom: 24px;
   }

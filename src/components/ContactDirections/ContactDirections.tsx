@@ -15,8 +15,8 @@ import { location } from '@/components/Main/MainLocation/MainLocation.constants'
 const ContactDirections = (): React.ReactElement => {
   return (
     <Fragment>
-      <ContactDirectionsImageWrapper>
-        <Image src="/images/contact-top-image.png" layout={'fill'} alt="상단 이미지 영역" />
+      <ContactDirectionsImageWrapper image={'/images/cover_location.webp'}>
+        Contact
       </ContactDirectionsImageWrapper>
       <ContactDirectionsContainer>
         <BreadCrumb />
@@ -28,8 +28,7 @@ const ContactDirections = (): React.ReactElement => {
           <SectionTitle>본사</SectionTitle>
           <SectionContents>
             <MainLocationMapContainer>
-              <MainLocationMap src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.2264406040447!2d129.02702901774845!3d35.103605418468796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568e99fa89b7279%3A0x58ad78ecf4b11149!2z67aA7IKw6rSR7Jet7IucIOykkeq1rCDqs6DqsIDquLggMzI!5e0!3m2!1sko!2skr!4v1694995140256!5m2!1sko!2skr'}
-                               allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+              <MainLocationMap src={'/images/loc_busan.webp'} />
             </MainLocationMapContainer>
             <div>
               <div>
@@ -57,8 +56,7 @@ const ContactDirections = (): React.ReactElement => {
           <SectionTitle>서울지사</SectionTitle>
           <SectionContents>
             <MainLocationMapContainer>
-              <MainLocationMap src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.9328239231695!2d127.11803179999998!3d37.509502499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5790ba59227%3A0x334aded18ec03fd1!2z7ISc7Jq47Yq567OE7IucIOyGoe2MjOq1rCDqsIDrnb3roZwgMjQw!5e0!3m2!1sko!2skr!4v1694957054008!5m2!1sko!2skr'}
-                               allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+              <MainLocationMap src={'/images/loc_seoul.webp'} />
             </MainLocationMapContainer>
             <div>
               <div>

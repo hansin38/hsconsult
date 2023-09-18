@@ -7,7 +7,7 @@ import History from '@/components/History/History';
 const IntroHistoryPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/overview.jpg">
+      <ContentsLayout topImgSrc="/images/cover_overview.webp" title={'회사연혁'}>
         <History />
       </ContentsLayout>
     </Layout>

@@ -11,7 +11,7 @@ export const HelloTextWrpper = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 740px;
+  //max-width: 740px;
   margin-top: 32px;
   gap: 24px;
   & > h3 {

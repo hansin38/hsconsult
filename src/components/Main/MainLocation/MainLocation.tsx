@@ -24,8 +24,7 @@ const MainLocation = (): React.ReactElement => {
         </MainLocationTab>
       </MainLocationTabs>
       <MainLocationMapContainer>
-        <MainLocationMap src={location[selected].src}
-                allowFullScreen={false} loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+        <MainLocationMap src={location[selected].src} alt={selected} width={'100'}/>
       </MainLocationMapContainer>
       <strong>{location[selected].address}</strong>
     </MainLocationContainer>

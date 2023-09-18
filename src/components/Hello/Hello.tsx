@@ -8,12 +8,12 @@ const Hello = (): React.ReactElement => {
       <HelloImageWrapper>
         <Image src="/images/hello.jpg" layout={'fill'} alt="상단 이미지 영역" />
       </HelloImageWrapper>
-      <ProfileImageWrapper>
-        <Image src="/images/profile.jpg" width={240} height={320} alt="상단 이미지 영역" />
-        <p>
-          대표이사 <b>홍길동</b>
-        </p>
-      </ProfileImageWrapper>
+      {/*<ProfileImageWrapper>*/}
+      {/*  <Image src="/images/profile.jpg" width={240} height={320} alt="상단 이미지 영역" />*/}
+      {/*  <p>*/}
+      {/*    대표이사 <b>홍길동</b>*/}
+      {/*  </p>*/}
+      {/*</ProfileImageWrapper>*/}
       <HelloTextWrpper>
         <h3>
           한신콘설탄트는 설명을 적어주세요 입니다.

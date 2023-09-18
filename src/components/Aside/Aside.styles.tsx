@@ -12,6 +12,7 @@ export const AsideItem = styled.div<IAsideItemProps>`
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
+  box-sizing: border-box;
 `;
 
 export const AsideTabItem = styled.div<IAsideItemProps>`

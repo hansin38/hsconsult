@@ -7,7 +7,7 @@ import Talent from '@/components/Talent/Talent';
 const RecruitTalentPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/field-top-image.jpg">
+      <ContentsLayout topImgSrc="/images/cover_recruit.webp" title={'채용정보'}>
         <Talent />
       </ContentsLayout>
     </Layout>

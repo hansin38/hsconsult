@@ -7,7 +7,7 @@ import Organization from '@/components/Organization/Organization';
 const IntroOrganizationPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/organization.jpg">
+      <ContentsLayout topImgSrc="/images/cover_overview.webp" title={'조직도'}>
         <Organization />
       </ContentsLayout>
     </Layout>

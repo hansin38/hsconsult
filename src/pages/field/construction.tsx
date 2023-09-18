@@ -7,7 +7,7 @@ import Architecture from '@/components/Architecture/Architecture';
 const FieldConstructionPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/field-top-image.jpg">
+      <ContentsLayout topImgSrc="/images/cover_section.webp" title={'사업분야'}>
         <Architecture />
       </ContentsLayout>
     </Layout>

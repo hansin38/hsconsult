@@ -22,16 +22,16 @@ const Supervision = (): React.ReactElement => {
       <SupervisionImageWrapper>
         <Image src="/images/field-content-top-banner01.jpg" layout={'fill'} alt="상단 이미지 영역" />
       </SupervisionImageWrapper>
-      <SupervisionTitle>설계분야</SupervisionTitle>
+      <SupervisionTitle>감리분야</SupervisionTitle>
       <SupervisionContainerTabs>
         <SupervisionContainerTabsItem active={tab === 'electrical-field'}>
-          <Link href={'/field/architecture/electrical-field'}>전기분야</Link>
+          <Link href={'/field/supervision/electrical-field'}>전기분야</Link>
         </SupervisionContainerTabsItem>
         <SupervisionContainerTabsItem active={tab === 'communication-field'}>
-          <Link href={'/field/architecture/communication-field'}>통신분야</Link>
+          <Link href={'/field/supervision/communication-field'}>통신분야</Link>
         </SupervisionContainerTabsItem>
         <SupervisionContainerTabsItem active={tab === 'railway-and-other-fields'}>
-          <Link href={'/field/architecture/railway-and-other-fields'}>철도기타분야</Link>
+          <Link href={'/field/supervision/railway-and-other-fields'}>철도기타분야</Link>
         </SupervisionContainerTabsItem>
       </SupervisionContainerTabs>
 

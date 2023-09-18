@@ -1,10 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { ContentsLayoutTopImageWrapper } from '@/components/ContentsLayout/ContentsLayout.styles';
 
-export const ContactDirectionsImageWrapper = styled.div<React.CSSProperties>`
-  position: relative;
-  width: 100%;
-  height: 240px;
+export const ContactDirectionsImageWrapper = styled(ContentsLayoutTopImageWrapper)<React.CSSProperties>`
 `;
 export const ContactDirectionsContainer = styled.div<React.CSSProperties>`
   position: relative;

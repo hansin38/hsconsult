@@ -7,7 +7,7 @@ import RecruitInformation from '@/components/RecruitInformation/RecruitInformati
 const RecruitInformationPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
-      <ContentsLayout topImgSrc="/images/field-top-image.jpg">
+      <ContentsLayout topImgSrc="/images/cover_recruit.webp" title={'채용정보'}>
         <RecruitInformation />
       </ContentsLayout>
     </Layout>

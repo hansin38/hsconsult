@@ -11,12 +11,12 @@ import Aside from '../Aside/Aside';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
 import { IContentLayout } from './ContentsLayout.types';
 
-const ContentsLayout = ({ topImgSrc, children }: IContentLayout): React.ReactElement => {
+const ContentsLayout = ({ topImgSrc, title, children }: IContentLayout): React.ReactElement => {
   return (
     <ContentsLayoutContainer>
       {topImgSrc && (
-        <ContentsLayoutTopImageWrapper>
-          <Image src={topImgSrc} layout="fill" objectFit="contain" alt="상단 이미지 영역" />
+        <ContentsLayoutTopImageWrapper image={topImgSrc}>
+          {title}
         </ContentsLayoutTopImageWrapper>
       )}
       <ContentsLayoutWrapper>

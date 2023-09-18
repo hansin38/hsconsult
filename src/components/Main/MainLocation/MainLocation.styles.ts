@@ -45,8 +45,11 @@ export const MainLocationMapContainer = styled.div`
   pointer-events: none;
 `;
 
-export const MainLocationMap = styled.iframe`
-  width: 100%;
-  height: 200%;
-  margin-top: -25%;
+export const MainLocationMap = styled.img`
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
