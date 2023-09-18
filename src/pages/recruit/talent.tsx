@@ -6,7 +6,7 @@ import Talent from '@/components/Talent/Talent';
 
 const RecruitTalentPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/field-top-image.jpg">
         <Talent />
       </ContentsLayout>

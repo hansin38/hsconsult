@@ -1,12 +1,14 @@
 import React from 'react';
-import { css } from '@emotion/react';
+import { useRouter } from 'next/router';
+import { Logo } from '@/components/svg/Logo';
 import { Contacts, Copyright, FooterContainer } from './Footer.styles';
 
 
 const Footer = (): React.ReactElement => {
+  const router = useRouter();
   return (
     <FooterContainer>
-      <strong css={css`font-size: 24px;color: #f4f4f4;`}>Hanshin</strong>
+      <Logo onClick={()=>router.push('/')} bleach/>
       <Contacts>
         <div><span>(주)서현기술단</span><span>대표자 : 정병율, 안명숙</span></div>
         <div><span>본점주소 : (우)08752 서울특별시 관악구 양녕로1길 32, 1층 (국문)</span><span>지점주소 : (우)13943 경기도 안양시 동안구 흥안대로500(구:관양동1507-23)서현빌딩 6층, 8~11층</span></div>

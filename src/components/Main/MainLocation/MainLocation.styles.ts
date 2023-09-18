@@ -26,6 +26,7 @@ export const MainLocationTab = styled.label`
   justify-content: center;
   background-color: #f9f9f9;
   font-weight: 600;
+  cursor: pointer;;
   &:has(:checked), &.checked {
     background-color: #000000;
     color: #ffffff;
@@ -41,6 +42,7 @@ export const MainLocationMapContainer = styled.div`
   border-radius: 4px;
   border: 1px solid #EFEFEF;
   margin-bottom: 12px;
+  pointer-events: none;
 `;
 
 export const MainLocationMap = styled.iframe`

@@ -30,7 +30,6 @@ const Organization = (): React.ReactElement => {
             <SubWrapper>
               {group.composition.map((composit) => (
                 <ProfileWrapper key={composit.name}>
-                  <Image src="/images/hongbacksa.jpg" width={120} height={160} alt={`${composit.name} ${group.position}`} />
                   {composit.name} {group.position}
                 </ProfileWrapper>
               ))}

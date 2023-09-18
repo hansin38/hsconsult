@@ -6,7 +6,7 @@ import RecruitInformation from '@/components/RecruitInformation/RecruitInformati
 
 const RecruitInformationPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/field-top-image.jpg">
         <RecruitInformation />
       </ContentsLayout>

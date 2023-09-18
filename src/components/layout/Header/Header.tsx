@@ -6,13 +6,14 @@ import Gnb from '@/components/layout/Header/Gnb/Gnb';
 import Snb from '@/components/layout/Header/Snb/Snb';
 import { IHeader } from '@/components/layout/Header/Header.types';
 import { HeaderContainer } from './Header.styles';
+import { Logo } from '@/components/svg/Logo';
 
 
 const Header = ({ transparent }: IHeader): React.ReactElement => {
   const router = useRouter();
   return (
     <HeaderContainer transparent={transparent}>
-      <strong css={css`font-size: 24px;`} onClick={()=>router.push('/')}>Hanshin</strong>
+      <Logo onClick={()=>router.push('/')}/>
       <Gnb />
       <Snb />
     </HeaderContainer>

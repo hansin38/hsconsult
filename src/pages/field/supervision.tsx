@@ -6,7 +6,7 @@ import Architecture from '@/components/Architecture/Architecture';
 
 const FieldSupervisionPage: NextPage = (): React.ReactElement => {
   return (
-    <Layout transparentHeader>
+    <Layout>
       <ContentsLayout topImgSrc="/images/field-top-image.jpg">
         <Architecture />
       </ContentsLayout>

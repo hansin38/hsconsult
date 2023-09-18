@@ -29,8 +29,10 @@ export const HeaderContainer = styled.header<{ transparent?: boolean }>`
             background-color: transparent;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
           }
-          & > strong {
-            color: #ffffff;
+          &:not(:hover) > svg {
+            * {
+              fill: #ffffff;
+            }
           }
           & > .gnb {
             color: #ffffff;
@@ -48,9 +50,6 @@ export const HeaderContainer = styled.header<{ transparent?: boolean }>`
       content: '';
       border-bottom: 1px solid #efefef;
       background-color: #ffffff;
-    }
-    & > strong {
-      color: #000000;
     }
     & > .gnb {
       color: #000000;
