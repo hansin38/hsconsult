@@ -27,11 +27,11 @@ const BreadCrumb = (): React.ReactElement => {
             result.push(
               <Fragment key={subPath.path}>
                 <BreadCrumbItem active={!activeTab}>
-                  <Link href={`${subPath.path}${activeTab ? `/${subPath.tabs[0].path}` : ''}`}>{subPath.name}</Link>
+                  <Link href={`/${path[0]}/${subPath.path}${activeTab ? `/${subPath.tabs[0].path}` : ''}`}>{subPath.name}</Link>
                 </BreadCrumbItem>
                 {activeTab && (
                   <BreadCrumbItem active>
-                    <Link href={`${subPath.path}/${activeTab.path}`}>{activeTab.name}</Link>
+                    <Link href={`/${path[0]}/${subPath.path}/${activeTab.path}`}>{activeTab.name}</Link>
                   </BreadCrumbItem>
                 )}
               </Fragment>

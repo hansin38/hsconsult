@@ -20,14 +20,14 @@ const Aside = (): React.ReactElement => {
             const isTab = subPath.tabs;
             result.push(
               <Fragment key={subPath.name}>
-                <Link href={`${subPath.path}${isTab ? `/${subPath.tabs[0].path}` : ''}`}>
+                <Link href={`/${path[0]}/${subPath.path}${isTab ? `/${subPath.tabs[0].path}` : ''}`}>
                   <AsideItem active={isActiveSubPath}>{subPath.name}</AsideItem>
                 </Link>
                 {isTab &&
                   isActiveSubPath &&
                   subPath.tabs.map((tab) => {
                     return (
-                      <Link href={`${subPath.path}/${tab.path}`} key={`${subPath.name}_${tab.name}`}>
+                      <Link href={`/${path[0]}/${subPath.path}/${tab.path}`} key={`${subPath.name}_${tab.name}`}>
                         <AsideTabItem active={query.tab === tab.path}>- {tab.name}</AsideTabItem>
                       </Link>
                     );
