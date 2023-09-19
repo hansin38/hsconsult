@@ -70,16 +70,20 @@ export const SliderArrow = styled.div<{ arrow: 'left' | 'right' }>`
   border-radius: 8px;
   background: #000;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 24px);
   right: -24px;
+  background-image: url('/images/arrow-button.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: center cneter !important;
+  background-size: 48px 48px !important;
+  transform: ${(props) => (props.arrow === 'left' ? 'rotate(180deg)' : 'rotate(0deg)')};
+
   &::before {
-    content: ${(props) => (props.arrow === 'left' ? '"<" !important' : '">" !important')};
-    font-size: 30px;
-    font-weight: bold;
+    content: ' ';
   }
   &:hover {
     color: inherit;
-    opacity: 1;
+    opacity: 0.8;
     background: #000;
   }
 `;

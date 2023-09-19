@@ -1,3 +1,5 @@
+import { MainSliderItem01 } from '@/components/Main/Main.styles';
+
 export const REQUESTS_OPERATION = {
   GET: 'get',
   POST: 'post',
@@ -67,5 +69,56 @@ export const menu = [
     name: 'Contact',
     target: '/contact/directions',
     subPath: [{ path: 'directions', name: '찾아오시는길' }],
+  },
+];
+
+export const INITIAL_CAROUSEL_ITEMS = [
+  {
+    id: 0,
+    height: '590px',
+    imgSrc: '/images/main-slide-01.jpg',
+    render: () => {
+      return (
+        <MainSliderItem01>
+          <h3>언제 어디서나 당신의 미래를 밝힙니다.</h3>
+          <h5>
+            이러하고 저러한 설명으로 매력을 어필합니다.
+            <br />두 줄까지 작성할 수 있습니다.
+          </h5>
+        </MainSliderItem01>
+      );
+    },
+  },
+  {
+    id: 1,
+    height: '590px',
+    imgSrc: '/images/main-slide-01.jpg',
+    render: () => {
+      return (
+        <MainSliderItem01>
+          <h3>언제 어디서나 당신의 미래를 밝힙니다.</h3>
+          <h5>
+            이러하고 저러한 설명으로 매력을 어필합니다.
+            <br />두 줄까지 작성할 수 있습니다.
+          </h5>
+        </MainSliderItem01>
+      );
+    },
+  },
+  {
+    id: 2,
+    height: '590px',
+    imgSrc: '/images/main-slide-01.jpg',
+    render: () => {
+      return (
+        <MainSliderItem01>
+          <h3>언제 어디서나 당신의 미래를 밝힙니다.</h3>
+          <h5>
+            이러하고 저러한 설명으로 매력을 어필합니다.
+            <br />두 줄까지 작성할 수 있습니다.
+          </h5>
+        </MainSliderItem01>
+      );
+    },
   },
 ];

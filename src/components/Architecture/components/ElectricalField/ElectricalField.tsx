@@ -36,9 +36,9 @@ const ElectricalField = (): React.ReactElement => {
         <ElectricalFieldSliderWrpper>
           <SliderWrapper>
             <Slider {...settings}>
-              <SliderItem bgImage={'/images/field-content-slide-banner01.jpg'} />
-              <SliderItem bgImage={'/images/field-content-slide-banner02.jpg'} />
-              <SliderItem bgImage={'/images/field-content-slide-banner03.jpg'} />
+              <SliderItem bgImage={'/images/sub-slide-banner01.png'} />
+              <SliderItem bgImage={'/images/sub-slide-banner02.png'} />
+              <SliderItem bgImage={'/images/sub-slide-banner03.png'} />
             </Slider>
           </SliderWrapper>
           <SliderTextWrpper>
