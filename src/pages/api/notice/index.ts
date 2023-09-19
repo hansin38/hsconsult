@@ -29,7 +29,7 @@ sql`
       page: Number(page),
       list,
       count: list.length,
-      total,
+      total: Number(total),
     },
   });
 }

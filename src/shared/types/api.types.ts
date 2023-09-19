@@ -28,6 +28,19 @@ export interface IPageParams extends IParams {
   page?: number;
 }
 
+export interface IGetPageReturn extends IAppApiReturnBase {
+  data: {
+    limit: number;
+    page: number;
+    list: Array<TArticle>;
+    count: number;
+    total: number;
+  };
+}
+export interface IGetArticleReturn extends IAppApiReturnBase {
+  data: TArticle;
+}
+
 export interface IReadParams extends IParams {
   id: number;
 }

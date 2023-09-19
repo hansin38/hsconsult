@@ -18,6 +18,7 @@ import MainNotice from '@/components/Main/MainNotice/MainNotice';
 import MainLocation from '@/components/Main/MainLocation/MainLocation';
 import Carousel from '@/components/Carousel/Carousel';
 import { INITIAL_CAROUSEL_ITEMS } from '@/shared/constants/common.constants';
+import { TArticle } from '@/shared/types/api.types';
 
 const Home: NextPage = (): React.ReactElement => {
   return (
@@ -104,7 +105,7 @@ const Home: NextPage = (): React.ReactElement => {
             <GoDetail href={'/customer/notice'} />
           </SectionTitle>
           <SectionBody>
-            <MainNotice />
+            <MainNotice list={Array.from({ length: 5 }, (e, i)=> ({ id: i, title: `${i ** 3 }`, timestamp: Math.ceil(new Date().getTime() / 1000) }) as TArticle)}/>
           </SectionBody>
         </Section>
         <Section>

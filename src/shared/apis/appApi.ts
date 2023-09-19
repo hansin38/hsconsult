@@ -1,10 +1,12 @@
-import { IAppApiReturnBase, IPageParams, IReadParams, IUpdateParams, IWriteParams } from '@/shared/types/api.types';
+import { IAppApiReturnBase, IGetArticleReturn, IGetPageReturn, IPageParams, IReadParams, IUpdateParams, IWriteParams } from '@/shared/types/api.types';
 import { REQUESTS_OPERATION } from '@/shared/constants/common.constants';
 import apiBase from './apiBase';
 
 export const appApi = apiBase({
   baseURL: '/api',
 });
+
+
 
 /**
  * @description 테이블의 페이지를 가져옵니다.
@@ -13,7 +15,7 @@ export const appApi = apiBase({
  * @param page 1 이상의 페이지 번호
  */
 export const getPage = ({ table, limit = 10, page }: IPageParams) =>
-  appApi.get<IAppApiReturnBase>(`/${table}?page=${page}&limit=${limit}`);
+  appApi.get<IGetPageReturn>(`/${table}?page=${page}&limit=${limit}`);
 
 /**
  *
@@ -21,7 +23,7 @@ export const getPage = ({ table, limit = 10, page }: IPageParams) =>
  * @param id 게시글의 id
  */
 export const getArticle = ({ table, id }: IReadParams) =>
-  appApi.get<IAppApiReturnBase>(`/${table}?id=${id}`);
+  appApi.get<IGetArticleReturn>(`/${table}/${id}`);
 
 /**
  * @description 게시글을 작성합니다.
@@ -43,7 +45,7 @@ export const createArticle = ({ table, name, email, phone, password, content, ti
  * @param update 업데이트할 내용 ({title, content, name, email, phone, reply, password})
  */
 export const updateArticle = ({ table, id, update }: IUpdateParams) =>
-  appApi.mutation<IAppApiReturnBase>({ url: `/${table}?id=${id}`, operation: REQUESTS_OPERATION.PATCH, data: update });
+  appApi.mutation<IAppApiReturnBase>({ url: `/${table}/${id}`, operation: REQUESTS_OPERATION.PATCH, data: update });
 
 /**
  *
@@ -51,4 +53,4 @@ export const updateArticle = ({ table, id, update }: IUpdateParams) =>
  * @param id 게시글의 id
  */
 export const removeArticle = ({ table, id }: IReadParams) =>
-  appApi.mutation<IAppApiReturnBase>({ url: `/${table}?id=${id}`, operation: REQUESTS_OPERATION.DELETE });
+  appApi.mutation<IAppApiReturnBase>({ url: `/${table}/${id}`, operation: REQUESTS_OPERATION.DELETE });
