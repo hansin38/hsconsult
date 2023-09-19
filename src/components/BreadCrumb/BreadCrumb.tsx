@@ -6,6 +6,8 @@ import { menu } from '@/shared/constants/common.constants';
 
 const BreadCrumb = (): React.ReactElement => {
   const router = useRouter();
+  const splittedPath = router.pathname.split('/');
+  console.log(`splittedPath`, splittedPath);
   const path = router.pathname.split('/').slice(1);
   const query = router.query;
 
@@ -26,11 +28,11 @@ const BreadCrumb = (): React.ReactElement => {
             result.push(
               <Fragment key={subPath.path}>
                 <BreadCrumbItem active={!activeTab}>
-                  <Link href={`${subPath.path}${activeTab ? `/?tab=${subPath.tabs[0].path}` : ''}`}>{subPath.name}</Link>
+                  <Link href={`${subPath.path}${activeTab ? `/${subPath.tabs[0].path}` : ''}`}>{subPath.name}</Link>
                 </BreadCrumbItem>
                 {activeTab && (
                   <BreadCrumbItem active>
-                    <Link href={`${subPath.path}/?tab=${activeTab.path}`}>{activeTab.name}</Link>
+                    <Link href={`${subPath.path}/${activeTab.path}`}>{activeTab.name}</Link>
                   </BreadCrumbItem>
                 )}
               </Fragment>

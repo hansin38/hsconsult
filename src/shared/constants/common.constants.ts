@@ -33,7 +33,7 @@ export const menu = [
         ],
       },
       {
-        path: 'construction',
+        path: 'supervision',
         name: '감리분야',
         tabs: [
           { path: 'electrical-field', name: '전기분야' },
@@ -41,7 +41,7 @@ export const menu = [
           { path: 'railway-and-other-fields', name: '철도기타분야' },
         ],
       },
-      { path: 'supervision', name: '공사시공분야' },
+      { path: 'construction', name: '공사시공분야' },
     ],
   },
   {
