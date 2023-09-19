@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-export const Logo = ({ bleach = false, onClick } : {bleach?: boolean; onClick?: ()=>void}) => {
+export const Logo = ({ bleach = false, onClick, height = 48 } : {bleach?: boolean; onClick?: ()=>void; height?: number}) => {
   const color = bleach ? {
     blue: '#ffffff',
     green: '#ffffff',
@@ -15,6 +15,8 @@ export const Logo = ({ bleach = false, onClick } : {bleach?: boolean; onClick?: 
          onClick={onClick}
          css={css`
            cursor: pointer;
+           width: ${height * 177 / 48}px;
+           height: ${height}px;
          `}
     >
       <path d="M41.8261 0H24.7686V10.4658C33.5987 7.99385 41.7032 7.31745 41.8261 7.30515V0Z" fill={color.blue}/>

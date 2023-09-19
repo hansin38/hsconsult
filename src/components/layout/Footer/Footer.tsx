@@ -8,7 +8,7 @@ const Footer = (): React.ReactElement => {
   const router = useRouter();
   return (
     <FooterContainer>
-      <Logo onClick={()=>router.push('/')} bleach/>
+      <Logo onClick={()=>router.push('/')} bleach height={32}/>
       <Contacts>
         <div><span>(주)한신콘설탄트</span><span>대표자 : 한상로, 이광휘</span></div>
         <div><span>본사 : 부산광역시 중구 고가길32 (보수동1가)</span><span>(TEL) 051-254-8141</span><span>(FAX) 051-254-8648</span></div>
