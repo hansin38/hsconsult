@@ -7,6 +7,7 @@ export const RecruitInformationContainer = styled.div<React.CSSProperties>`
   flex-direction: column;
   margin-top: 34px;
   gap: 32px;
+  font-variant-numeric: tabular-nums;
 `;
 
 export const RecruitInformationTextWrpper = styled.div<React.CSSProperties>`

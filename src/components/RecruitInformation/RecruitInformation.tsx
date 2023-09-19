@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import { RecruitInformationContainer, RecruitInformationTextWrpper } from 'src/components/RecruitInformation/RecruitInformation.styles';
 import Table from '@/components/Table/Table';
 import { ITable } from '@/components/Table/Table.types';
@@ -7,40 +8,82 @@ export const INITAL_ELECTRICAL_FIELD_DATA: ITable = {
   header: [
     {
       title: '모집일자',
-      width: '194px',
     },
     {
       title: '모집분야',
-      width: '194px',
     },
     {
       title: '근무지역',
-      width: '194px',
+    },
+    {
+      title: '모집인원',
+    },
+    {
+      title: '급여조건',
+    },
+    {
+      title: '입사전형',
+    },
+    {
+      title: '자격 요건',
+    },
+    {
+      title: '제출서류',
+    },
+    {
+      title: '접수 방법',
+    },
+    {
+      title: '인사 담당자',
     },
   ],
   rows: [
-    { id: 1, title: '상시 채용(채용 시까지)' },
-    { id: 2, title: '정보통신 엔지니어링 감리분야' },
     {
-      id: 3,
-      render: () => (
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<b>정보통신 엔지니어링 감리분야 [경력]</b><br/>
-      * 고졸이상<br/>
-      * 감독 및 감리경력 7년 이상<br/>
-      * 정보통신 특급 감리원 우대<br/>
-      * 국가기술자격 소지자 우대(기술사 특별 우대)(정보통신, 정보처리)<br/>
-      * 영어 능통자 우대<br/>
-      * 국가보훈대상자는 관계법에 의거 우대<br/>
-      * 해외여행에 결격사유가 없는 자`,
-          }}
-        />
-      ),
+      id: 1,
+      title: '상시 채용(채용 시까지)',
+    },
+    {
+      id: 1,
+      title: '설계사업부내 전기설계분야, 정보통신분야',
+    },
+    {
+      id: 1,
+      title: '서울지사',
+    },
+    {
+      id: 1,
+      title: '00명',
+    },
+    {
+      id: 1,
+      title: '협의(회사 사규)에 의함',
+    },
+    {
+      id: 1,
+      title: ()=>parse('1차 : 서류심사<br />2차 : 구술 & 면접 (서류심사 합격자에 한하여 개별통보) 요건'),
+    },
+    {
+      id: 1,
+      title: ()=>parse('전기설계분야, 정보통신분야 [신입/경력]<br /> • 초대졸, 대졸 이상<br /> • 국가기술자격 소지자 우대<br />• 해외여행에 결격사유가 없는자'),
+    },
+    {
+      id: 1,
+      title: ()=>parse('• 이력서 1부 (사진부착 필)<br />• 자기소개서1부'),
+    },
+    {
+      id: 1,
+      title: ()=>parse('E-mail 접수 (담당자: themore77@naver.com)<br />마감일 도착 분까지 유효함'),
+    },
+    {
+      id: 1,
+      title: ()=>parse(' • 서울지사 업무부 김은지 대리 <br /> • 직통전화 : 02-417-6761'),
     },
   ],
   align: 'vertical',
 };
+INITAL_ELECTRICAL_FIELD_DATA.header.forEach((item) => {
+  item.width = '194px';
+});
 
 const RecruitInformation = (): React.ReactElement => {
   return (
