@@ -7,7 +7,6 @@ import { menu } from '@/shared/constants/common.constants';
 const BreadCrumb = (): React.ReactElement => {
   const router = useRouter();
   const splittedPath = router.pathname.split('/');
-  console.log(`splittedPath`, splittedPath);
   const path = router.pathname.split('/').slice(1);
   const query = router.query;
 
