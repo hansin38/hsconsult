@@ -50,7 +50,7 @@ export interface IWriteParams extends IParams {
   name: string;
   email?: string;
   phone?: string;
-  password: string;
+  password?: string;
 }
 export interface IUpdateParams extends IParams {
   id: number;

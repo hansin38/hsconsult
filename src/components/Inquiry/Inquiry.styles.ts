@@ -30,3 +30,71 @@ export const InquiryTextWrpper = styled.div<React.CSSProperties>`
     word-break: keep-all;
   }
 `;
+
+export const InquiryLabel = styled.label`
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 9px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  &:first-of-type, &:first-child {
+    margin-top: 0;
+  }
+`;
+
+export const InquiryForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  input, textarea {
+    width: 100%;
+    padding: 16px 14px;
+    border-radius: 4px;
+    border: 1px solid #EFEFEF;
+    overflow: hidden;
+    color: #7C7C7C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  textarea {
+    font-family: inherit;
+    box-sizing: border-box;
+    height: 144px;
+    resize: none;
+  }
+  span {
+    font-size: 12px;
+    margin-top: 12px;
+    display: block;
+  }
+`;
+
+export const InquiryButtonWrapper = styled.div`
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 32px;
+  & > button {
+    display: flex;
+    width: 120px;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    &[type="button"] {
+      border: 1px solid #EFEFEF;
+      background-color: #FFF;
+      color: #7C7C7C;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    &[type="submit"] {
+      background-color: #0031B0;
+      color: #ffffff;
+    }
+  }
+`;
