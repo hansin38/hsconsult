@@ -1,5 +1,5 @@
 export type TTable = 'inquiry' | 'notice';
-type TLimit = 5 | 10 | 20 | 30 | 40 | 50;
+type TLimit = 1 | 5 | 10 | 20 | 30 | 40 | 50;
 
 export interface IAppApiReturnBase {
   result: 'success' | 'error';
