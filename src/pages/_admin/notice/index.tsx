@@ -47,11 +47,6 @@ const AdminCustomerQnaPage: NextPage = (): React.ReactElement => {
   return (
     <Layout>
       <ContentsLayout topImgSrc="/images/cover_customer.webp" title={'고객지원'}>
-        <InquiryContainer>
-          <InquiryTextWrpper>
-            <h3>공지사항 작성</h3>
-            <h5>공지사항을 작성합니다.</h5>
-          </InquiryTextWrpper>
           <InquiryForm>
             <InquiryLabel htmlFor={'title'}>제목</InquiryLabel>
             <input type='text' id='title' {...register('title')} className={errors.title ? 'error' : ''}/>
@@ -62,7 +57,6 @@ const AdminCustomerQnaPage: NextPage = (): React.ReactElement => {
               <button type={'submit'} onClick={onSubmit}>작성하기</button>
             </InquiryButtonWrapper>
           </InquiryForm>
-        </InquiryContainer>
       </ContentsLayout>
     </Layout>
   );

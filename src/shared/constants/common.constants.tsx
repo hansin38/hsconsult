@@ -77,8 +77,8 @@ export const adminMenu = [
     name: '어드민',
     target: '/_admin/notice',
     subPath: [
-      { path: 'notice', name: '공지사항' },
-      { path: 'inquiry', name: '1:1문의' },
+      { path: 'notice', name: '공지작성' },
+      { path: 'inquiry', name: '문의확인' },
     ],
   },
 ] as {path: string; name: string; target: string; subPath: ({path: string; name: string; tabs: {path: string; name: string}[]} | {path: string; name: string; tabs?: undefined})[]}[];
