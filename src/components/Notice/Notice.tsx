@@ -1,7 +1,7 @@
 import React from 'react';
 import { UseQueryResult } from 'react-query';
 import { IGetPageReturn, TArticle } from '@/shared/types/api.types';
-import MainNotice from '@/components/Main/MainNotice/MainNotice';
+import ArticleList from '@/components/ArticleList/ArticleList';
 import { NoticeContainer, NoticeHelmet, NoticeHelmetLeft, NoticeSearch, NoticeTextWrpper } from './Notice.styles';
 
 
@@ -21,7 +21,7 @@ const Notice = ({ data: res, isLoading, error }: UseQueryResult<IGetPageReturn, 
           <input type='text' placeholder={'검색어를 입력해주세요.'}/>
         </NoticeSearch>
       </NoticeHelmet>
-      <MainNotice list={Array.from({ length: 10 }, (e, i)=> ({ id: i, title: `${i ** 3 }`, timestamp: Math.ceil(new Date().getTime() / 1000) }) as TArticle)}/>
+      <ArticleList list={res?.data?.list as TArticle[] || []} table={'notice'}/>
     </NoticeContainer>
   );
 };

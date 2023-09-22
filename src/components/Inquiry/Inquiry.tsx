@@ -63,7 +63,7 @@ const Inquiry = (): React.ReactElement => {
         <InquiryLabel htmlFor={'content'}>문의내용</InquiryLabel>
         <textarea id='content' {...register('content')} className={errors.content ? 'error' : ''}/>
         <InquiryButtonWrapper>
-          <button type={'button'}>취소하기</button>
+          <button type={'button'} onClick={()=>reset()}>취소하기</button>
           <button type={'submit'} onClick={onSubmit}>문의하기</button>
         </InquiryButtonWrapper>
       </InquiryForm>

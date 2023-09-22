@@ -34,14 +34,21 @@ export const CarouselSlide = styled.div<{ imgSrc: string; height: string }>`
 
 export const CarouselDots = styled.div`
   display: flex;
-  gap: 8px;
   & > i {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: white;
+    display: flex;
+    width: 18px;
+    height: 18px;
     opacity: 0.5;
     cursor: pointer;
+    &::before {
+      content: '';
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: white;
+      width: 8px;
+      height: 8px;
+    }
     &.active {
       opacity: 1;
     }
@@ -70,9 +77,11 @@ export const CarouselIndicator = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
-  max-width: 1280px;
-  left: calc(50% - 640px);
+  padding: 24px 104px;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
 `;
 // 언제 어디서나 당신의 미래를 밝힙니다.
 

@@ -20,7 +20,7 @@ sql`
 `,
 sql`
   SELECT * FROM notice
-  ORDER BY id
+  ORDER BY id DESC
   LIMIT ${Number(limit)}
   OFFSET ${Number(limit) * (Number(page) - 1)};
 `]);

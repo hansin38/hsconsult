@@ -1,6 +1,7 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import Image from 'next/image';
+import { useQuery } from 'react-query';
 import Layout from '@/components/layout/Layout';
 import {
   ActionSection,
@@ -14,13 +15,16 @@ import {
   SectionDescription,
   SectionTitle,
 } from '@/components/Main/Main.styles';
-import MainNotice from '@/components/Main/MainNotice/MainNotice';
 import MainLocation from '@/components/Main/MainLocation/MainLocation';
 import Carousel from '@/components/Carousel/Carousel';
 import { INITIAL_CAROUSEL_ITEMS } from '@/shared/constants/common.constants';
 import { TArticle } from '@/shared/types/api.types';
+import { getPage } from '@/shared/apis/appApi';
+import ArticleList from '@/components/ArticleList/ArticleList';
 
 const Home: NextPage = (): React.ReactElement => {
+
+  const queryData = useQuery(['notice', 1], () => getPage({ table: 'notice', limit: 10, page: Number(1) }));
   return (
     <Layout transparentHeader>
       <CarouselSection>
@@ -105,7 +109,7 @@ const Home: NextPage = (): React.ReactElement => {
             <GoDetail href={'/customer/notice'} />
           </SectionTitle>
           <SectionBody>
-            <MainNotice list={Array.from({ length: 5 }, (e, i)=> ({ id: i, title: `${i ** 3 }`, timestamp: Math.ceil(new Date().getTime() / 1000) }) as TArticle)}/>
+            <ArticleList list={(queryData?.data?.data?.list || []) as TArticle[]}/>
           </SectionBody>
         </Section>
         <Section>

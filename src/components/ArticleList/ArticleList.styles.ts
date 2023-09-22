@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 
-export const MainNoticeTableRow = styled.div`
+export const ArticleListTableRow = styled.div`
   display: table-row;
   border-bottom: 1px solid #EFEFEF;
   font-size: 16px;
   line-height: 24px;
   height: 48px;
+  cursor: pointer;
   & > div {
     display: table-cell;
     border-right: 1px solid #EFEFEF;
@@ -23,12 +24,12 @@ export const MainNoticeTableRow = styled.div`
   }
 `;
 
-export const MainNoticeTableHeader = styled(MainNoticeTableRow)`
+export const ArticleListTableHeader = styled(ArticleListTableRow)`
   background-color: #f9f9f9;
   font-weight: 600;
 `;
 
-export const MainNoticeTable = styled.div`
+export const ArticleListTable = styled.div`
   display: table;
   width: 100%;
   border-collapse: collapse;

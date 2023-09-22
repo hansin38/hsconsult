@@ -92,7 +92,7 @@ export const InquiryButtonWrapper = styled.div`
       font-weight: 600;
       line-height: 24px;
     }
-    &[type="submit"] {
+    &[type="submit"], &:last-child, &:last-of-type {
       background-color: #0031B0;
       color: #ffffff;
     }

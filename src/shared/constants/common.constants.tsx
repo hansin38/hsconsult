@@ -52,7 +52,7 @@ export const menu = [
     target: '/customer/notice',
     subPath: [
       { path: 'notice', name: '공지사항' },
-      { path: 'qna', name: '1:1문의' },
+      { path: 'inquiry', name: '1:1문의' },
     ],
   },
   {
@@ -70,7 +70,18 @@ export const menu = [
     target: '/contact/directions',
     subPath: [{ path: 'directions', name: '찾아오시는길' }],
   },
-];
+] as {path: string; name: string; target: string; subPath: ({path: string; name: string; tabs: {path: string; name: string}[]} | {path: string; name: string; tabs?: undefined})[]}[];
+export const adminMenu = [
+  {
+    path: '_admin',
+    name: '어드민',
+    target: '/_admin/notice',
+    subPath: [
+      { path: 'notice', name: '공지사항' },
+      { path: 'inquiry', name: '1:1문의' },
+    ],
+  },
+] as {path: string; name: string; target: string; subPath: ({path: string; name: string; tabs: {path: string; name: string}[]} | {path: string; name: string; tabs?: undefined})[]}[];
 
 export const INITIAL_CAROUSEL_ITEMS = [
   {

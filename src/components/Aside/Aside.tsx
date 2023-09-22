@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React, { Fragment, useCallback } from 'react';
 import Link from 'next/link';
-import { menu } from '@/shared/constants/common.constants';
+import { adminMenu, menu } from '@/shared/constants/common.constants';
 import { AsideContainer, AsideItem, AsideTabItem } from 'src/components/Aside/Aside.styles';
 
 const Aside = (): React.ReactElement => {
@@ -11,7 +11,7 @@ const Aside = (): React.ReactElement => {
 
   const renderAsideItems = useCallback(() => {
     const result = [];
-    menu.forEach((item) => {
+    (path[0] === '_admin' ? adminMenu : menu).forEach((item) => {
       const isMainPath = path.includes(item.path);
       if (isMainPath) {
         if (item.subPath) {
