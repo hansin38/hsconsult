@@ -138,9 +138,9 @@ export const ActionSection = styled(Section)`
   ${SectionBodyItem} {
     align-items: center;
     & > img {
-      width: 64px;
-      height: 64px;
-      border-radius: 32px;
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
       background-color: white;
     }
     & > div {

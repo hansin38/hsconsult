@@ -70,7 +70,7 @@ const Home: NextPage = (): React.ReactElement => {
         </SectionDescription>
         <SectionBody>
           <SectionBodyItem href={'/intro/hello'}>
-            <img src="about:blank" alt="" />
+            <img src="/images/icon_intro.svg" alt="" />
             <div>회사소개</div>
             <div>
               해당 분야에 대한 설명을 적어줍니다.
@@ -79,7 +79,7 @@ const Home: NextPage = (): React.ReactElement => {
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/customer/notice'}>
-            <img src="about:blank" alt="" />
+            <img src="/images/icon_customer.svg" alt="" />
             <div>고객지원</div>
             <div>
               해당 분야에 대한 설명을 적어줍니다.
@@ -88,7 +88,7 @@ const Home: NextPage = (): React.ReactElement => {
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/recruit/talent'}>
-            <img src="about:blank" alt="" />
+            <img src="/images/icon_recruit.svg" alt="" />
             <div>채용정보</div>
             <div>
               해당 분야에 대한 설명을 적어줍니다.
