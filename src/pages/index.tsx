@@ -109,7 +109,7 @@ const Home: NextPage = (): React.ReactElement => {
             <GoDetail href={'/customer/notice'} />
           </SectionTitle>
           <SectionBody>
-            <ArticleList list={(queryData?.data?.data?.list || []) as TArticle[]}/>
+            <ArticleList list={(queryData?.data?.data?.list || []) as TArticle[]} table={'notice'}/>
           </SectionBody>
         </Section>
         <Section>
