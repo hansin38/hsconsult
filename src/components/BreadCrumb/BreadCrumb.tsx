@@ -1,6 +1,7 @@
 import React, { Fragment, useCallback } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Head from 'next/head';
 import { BreadCrumbContainer, BreadCrumbItem } from 'src/components/BreadCrumb/BreadCrumb.styles';
 import { adminMenu, menu } from '@/shared/constants/common.constants';
 
@@ -17,6 +18,9 @@ const BreadCrumb = (): React.ReactElement => {
         result.push(
           <BreadCrumbItem key={item.path} active={!item.subPath}>
             <Link href={`/${item.path}/${item?.subPath[0]?.path}`}>{item.name}</Link>
+            <Head>
+              <title>{item.name}</title>
+            </Head>
           </BreadCrumbItem>
         );
         if (item.subPath) {
@@ -26,10 +30,16 @@ const BreadCrumb = (): React.ReactElement => {
           result.push(
             <Fragment key={subPath.path}>
                 <BreadCrumbItem active={!activeTab}>
+                  <Head>
+                    <title>{item.name} - {subPath.name}</title>
+                  </Head>
                   <Link href={`/${path[0]}/${subPath.path}${activeTab ? `/${subPath.tabs[0].path}` : ''}`}>{subPath.name}</Link>
                 </BreadCrumbItem>
                 {activeTab && (
                   <BreadCrumbItem active>
+                    <Head>
+                      <title>{item.name} - {subPath.name} - {activeTab.name}</title>
+                    </Head>
                     <Link href={`/${path[0]}/${subPath.path}/${activeTab.path}`}>{activeTab.name}</Link>
                   </BreadCrumbItem>
                 )}
