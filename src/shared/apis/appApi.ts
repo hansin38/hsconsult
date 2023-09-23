@@ -3,7 +3,7 @@ import { REQUESTS_OPERATION } from '@/shared/constants/common.constants';
 import apiBase from './apiBase';
 
 export const appApi = apiBase({
-  baseURL: '/api',
+  baseURL: `${process.env.NODE_ENV === 'development' ? 'http://localhost:3002' : 'https://www.hscont.co.kr'}/api`,
 });
 
 

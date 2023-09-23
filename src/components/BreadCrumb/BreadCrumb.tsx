@@ -9,9 +9,6 @@ const BreadCrumb = (): React.ReactElement => {
   const path = router.pathname.split('/').slice(1);
   const query = router.query;
 
-  console.log('path[0]', path[0]);
-
-
   const renderBreadCrumbItems = useCallback(() => {
     const result = [];
     (path[0] === '_admin' ? adminMenu : menu).forEach((item) => {

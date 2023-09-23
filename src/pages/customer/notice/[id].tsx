@@ -1,14 +1,15 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { useQuery } from 'react-query';
+import { dehydrate, useQuery } from 'react-query';
 import { css } from '@emotion/react';
 import Layout from '@/components/layout/Layout';
 import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
-import { getArticle } from '@/shared/apis/appApi';
+import { getArticle, getPage } from '@/shared/apis/appApi';
 import ArticleDetail from '@/components/ArticleDetail/ArticleDetail';
 import { NoticeTextWrpper } from '@/components/Notice/Notice.styles';
 import { InquiryButtonWrapper } from '@/components/Inquiry/Inquiry.styles';
+import queryClient from '@/shared/configs/queryClient';
 
 const CustomerNoticeDetailPage: NextPage = (): React.ReactElement => {
   const router = useRouter();
@@ -31,5 +32,22 @@ const CustomerNoticeDetailPage: NextPage = (): React.ReactElement => {
     </Layout>
   );
 };
+
+export async function getStaticProps({ params }) {
+  const { id } = params;
+  await queryClient.prefetchQuery(['notice-detail', id], () => getArticle({ table: 'notice', id: Number(id) }));
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  };
+}
+
+export function getStaticPaths(){
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+}
 
 export default CustomerNoticeDetailPage;

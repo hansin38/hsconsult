@@ -1,13 +1,14 @@
 import React from 'react';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { useQuery } from 'react-query';
+import { dehydrate, useQuery } from 'react-query';
 import Layout from '@/components/layout/Layout';
 import ContentsLayout from '@/components/ContentsLayout/ContentsLayout';
 import { getPage } from '@/shared/apis/appApi';
 import { TArticle } from '@/shared/types/api.types';
 import ArticleList from '@/components/ArticleList/ArticleList';
 import { Pagination } from '@/components/Pagination/Pagination';
+import queryClient from '@/shared/configs/queryClient';
 
 const AdminCustomerNoticePage: NextPage = (): React.ReactElement => {
   const router = useRouter();
@@ -30,5 +31,15 @@ const AdminCustomerNoticePage: NextPage = (): React.ReactElement => {
     </Layout>
   );
 };
+
+
+export async function getStaticProps() {
+  await queryClient.prefetchQuery(['inquiry', '1'], () => getPage({ table: 'notice', page: 1 }));
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient),
+    },
+  };
+}
 
 export default AdminCustomerNoticePage;

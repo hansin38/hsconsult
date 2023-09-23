@@ -25,7 +25,7 @@ export interface IParams {
 
 export interface IPageParams extends IParams {
   limit?: TLimit;
-  page?: number;
+  page: number | `${number}`;
 }
 
 export interface IGetPageReturn extends IAppApiReturnBase {
@@ -42,7 +42,7 @@ export interface IGetArticleReturn extends IAppApiReturnBase {
 }
 
 export interface IReadParams extends IParams {
-  id: number;
+  id: number | `${number}`;
 }
 export interface IWriteParams extends IParams {
   title: string;
@@ -53,7 +53,7 @@ export interface IWriteParams extends IParams {
   password?: string;
 }
 export interface IUpdateParams extends IParams {
-  id: number;
+  id: number | `${number}`;
   update: Partial<IWriteParams>;
 }
 
