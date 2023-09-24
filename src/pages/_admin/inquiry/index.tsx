@@ -18,7 +18,7 @@ const AdminCustomerNoticePage: NextPage = (): React.ReactElement => {
     <Layout>
       <ContentsLayout topImgSrc="/images/cover_customer.webp" title={'고객지원'}>
         <>
-          <ArticleList list={queryData?.data?.data?.list as TArticle[] || []} useContent table={'inquiry'}/>
+          <ArticleList list={queryData?.data?.data?.list as TArticle[] || []} useContent table={'inquiry'} isAdmin/>
           {queryData.isLoading ? <>isLoading...</> :
             <Pagination
               currentPage={Number(page)}
