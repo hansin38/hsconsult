@@ -12,7 +12,7 @@ import queryClient from '@/shared/configs/queryClient';
 const CustomerNoticePage: NextPage = (): React.ReactElement => {
   const router = useRouter();
   const { page = '1' } = router.query;
-  const queryData = useQuery(['notice', 'list', page], () => getPage({ table: 'notice', page: Number(page) }));
+  const queryData = useQuery(['notice', page], () => getPage({ table: 'notice', page: Number(page) }));
   return (
     <Layout>
       <ContentsLayout topImgSrc="/images/cover_customer.webp" title={'고객지원'}>
