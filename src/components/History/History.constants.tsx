@@ -42,31 +42,13 @@ export const INITIAL_HISTORY_DATA = [
     ],
   },
   {
-    yearbundle: '2000 - 2009',
+    yearbundle: '2000 - 현재',
     years: [
       {
         year: 2023,
-        content: [{ description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }],
+        content: [{ description: '철도시설 안전진단 전문기관등록(정보통신) 부산광역시 제 2023-6호' }, { description: '엔지니어링사업자분야 추가신고 (신고분야:철도신호)' }],
       },
-      { year: 2022, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2021, content: [{ description: '설명을 적어주세요' }, { description: '설명을 적어주세요' }] },
-
-      { year: 2020, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2019, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2018, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2017, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2016, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2015, content: [{ description: '설명을 적어주세요' }] },
-    ],
-  },
-  {
-    yearbundle: '2010 - 현재',
-    years: [
-      { year: 2014, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2013, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2012, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2011, content: [{ description: '설명을 적어주세요' }] },
-      { year: 2010, content: [{ description: '설명을 적어주세요' }] },
+      { year: 2003, content: [{ description: '자본금 305,000천원으로 증자' }] },
     ],
   },
 ];

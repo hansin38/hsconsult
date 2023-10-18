@@ -1,6 +1,5 @@
 import React from 'react';
 import {} from './Header.constants';
-import { css } from '@emotion/react';
 import { useRouter } from 'next/router';
 import Gnb from '@/components/layout/Header/Gnb/Gnb';
 import Snb from '@/components/layout/Header/Snb/Snb';

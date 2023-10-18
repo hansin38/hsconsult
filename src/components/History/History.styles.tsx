@@ -60,3 +60,12 @@ export const HistoryContentItem = styled.div<React.CSSProperties>`
     }
   }
 `;
+
+export const HistoryTitle = styled.div<React.CSSProperties>`
+  border-left: 4px solid #0031b0;
+  padding-left: 20px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+`;

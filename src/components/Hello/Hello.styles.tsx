@@ -5,28 +5,19 @@ export const HelloContainer = styled.div<React.CSSProperties>`
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 34px;
 `;
 export const HelloTextWrpper = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
   width: 100%;
   //max-width: 740px;
-  margin-top: 32px;
   gap: 24px;
-  & > h3 {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-  & > h5 {
-    color: #000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    word-break: keep-all;
-  }
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  word-break: keep-all;
+  margin-top: 24px;
 `;
 
 export const HelloImageWrapper = styled.div<React.CSSProperties>`
@@ -50,4 +41,15 @@ export const ProfileImageWrapper = styled.div<React.CSSProperties>`
     font-weight: 400;
     line-height: 24px;
   }
+`;
+
+
+export const HelloTitle = styled.div<React.CSSProperties>`
+  border-left: 4px solid #0031b0;
+  padding-left: 20px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 24px;
 `;

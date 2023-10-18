@@ -57,6 +57,7 @@ export const TableFlexRow = styled.div`
     font-weight: 600;
     border-right: 1px solid #efefef;
     flex-shrink: 0;
+    height: auto;
   }
   & > div {
     height: 100%;
