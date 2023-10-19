@@ -61,6 +61,7 @@ export const menu = [
     target: '/recruit/talent',
     subPath: [
       { path: 'talent', name: '인재상' },
+      { path: 'process', name: '채용프로세스' },
       { path: 'recruit-information', name: '채용안내' },
     ],
   },

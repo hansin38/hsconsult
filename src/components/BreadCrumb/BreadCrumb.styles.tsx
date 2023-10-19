@@ -8,6 +8,7 @@ export const BreadCrumbItem = styled.div<IBreadCrumbItemProps>`
   line-height: 22px;
   color: #7c7c7c;
   white-space: pre;
+  letter-spacing: -1px;
 `;
 
 export const BreadCrumbContainer = styled.div<React.CSSProperties>`

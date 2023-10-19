@@ -4,7 +4,38 @@ import { RecruitInformationContainer, RecruitInformationTextWrpper } from 'src/c
 import Table from '@/components/Table/Table';
 import { ITable } from '@/components/Table/Table.types';
 
-export const INITAL_ELECTRICAL_FIELD_DATA: ITable = {
+export const INITAL_RECRUIT_OVERVIEW_DATA: ITable = {
+  header: [
+    {
+      title: '모집시기',
+    },
+    {
+      title: '지원방법',
+    },
+    {
+      title: '응시자격',
+    },
+  ],
+  rows: [
+    {
+      id: 1,
+      title: '각 부서별 인력 필요 시 한해 년중 수시 모집',
+    },
+    {
+      id: 1,
+      title: '채용안내 - 접수방법 확인',
+    },
+    {
+      id: 1,
+      title: '해외여행에 결격사유가 없어야함',
+    },
+  ],
+  align: 'vertical',
+};
+INITAL_RECRUIT_OVERVIEW_DATA.header.forEach((item) => {
+  item.width = '194px';
+});
+export const INITAL_RECRUIT_DATA: ITable = {
   header: [
     {
       title: '모집일자',
@@ -81,7 +112,7 @@ export const INITAL_ELECTRICAL_FIELD_DATA: ITable = {
   ],
   align: 'vertical',
 };
-INITAL_ELECTRICAL_FIELD_DATA.header.forEach((item) => {
+INITAL_RECRUIT_DATA.header.forEach((item) => {
   item.width = '194px';
 });
 
@@ -94,7 +125,8 @@ const RecruitInformation = (): React.ReactElement => {
         </h3>
         <h5>한신콘설탄트와 함께 미래를 그려나갈 이들을 기다립니다.</h5>
       </RecruitInformationTextWrpper>
-      <Table data={INITAL_ELECTRICAL_FIELD_DATA} />
+      <Table data={INITAL_RECRUIT_OVERVIEW_DATA} />
+      <Table data={INITAL_RECRUIT_DATA} />
     </RecruitInformationContainer>
   );
 };
