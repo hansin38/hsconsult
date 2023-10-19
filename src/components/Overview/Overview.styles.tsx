@@ -4,6 +4,8 @@ import styled from '@emotion/styled';
 export const OverviewContainer = styled.div<React.CSSProperties>`
   position: relative;
   flex-wrap: wrap;
+  margin-top: 34px;
+  & > 
 `;
 
 export const OverviewImageWrapper = styled.div<React.CSSProperties>`

@@ -125,7 +125,7 @@ const RecruitInformation = (): React.ReactElement => {
         </h3>
         <h5>한신콘설탄트와 함께 미래를 그려나갈 이들을 기다립니다.</h5>
       </RecruitInformationTextWrpper>
-      <Table data={INITAL_RECRUIT_OVERVIEW_DATA} />
+      {/*<Table data={INITAL_RECRUIT_OVERVIEW_DATA} />*/}
       <Table data={INITAL_RECRUIT_DATA} />
     </RecruitInformationContainer>
   );

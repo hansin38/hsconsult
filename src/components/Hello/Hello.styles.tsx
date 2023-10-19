@@ -5,6 +5,10 @@ export const HelloContainer = styled.div<React.CSSProperties>`
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-top: 34px;
+  & > svg {
+    margin: 24px 0;
+  }
 `;
 export const HelloTextWrpper = styled.div<React.CSSProperties>`
   display: flex;

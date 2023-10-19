@@ -10,56 +10,8 @@ const Talent = (): React.ReactElement => {
       </TalentTextWrpper>
       <TalentCardWrapper>
         <TalentCard>
-          <div></div>
-          <div>
-            <h3>
-              믿음 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
-        </TalentCard>
-        <TalentCard>
-          <div></div>
-          <div>
-            <h3>
-              소망 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
-        </TalentCard>
-        <TalentCard>
-          <div></div>
-          <div>
-            <h3>
-              사랑 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
-        </TalentCard>
-        <TalentCard>
-          <div></div>
-          <div>
-            <h3>
-              고기 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
+          <div><img src='/images/social-justice.png' alt='social' /></div>
+          <div>사람 중심의 가치를 실현합니다.</div>
         </TalentCard>
       </TalentCardWrapper>
     </TalentContainer>

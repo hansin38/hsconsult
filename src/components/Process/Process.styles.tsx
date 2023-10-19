@@ -34,44 +34,45 @@ export const ProcessCardWrapper = styled.div<React.CSSProperties>`
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding-block: 100px;
 `;
 
-export const ProcessCard = styled.div<React.CSSProperties>`
+export const ProcessCard = styled.div<{ color?: string}>`
+  position: relative;
   display: flex;
-  padding: 48px 40px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 32px;
-  border-radius: 4px;
-  border: 1px solid #efefef;
+  flex-direction: column;
+  padding-top: 100px;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  border-radius: 50%;
   background: #fff;
-  width: 519px;
-  & > div:first-of-type {
+  border: 8px solid ${(props) => props.color || '#efefef'};
+  width: 180px;
+  height: 180px;
+
+  color: #222;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  
+  & > i {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 64px;
     height: 64px;
-    border-radius: 50%;
-    background: #efefef;
-  }
-  & > div:last-of-type {
     display: flex;
-    flex-direction: column;
-    & > h3 {
-      color: #000;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
-      & > span {
-        color: #2951ba;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-    }
-    & > h5 {
-      color: #525252;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    & > img {
+      width: 64%;
+      height: 64%;
     }
   }
 `;

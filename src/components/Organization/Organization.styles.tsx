@@ -5,6 +5,7 @@ export const OrganizationContainer = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
   gap: 64px;
+  margin-top: 34px;
 `;
 
 export const OrganizationWrapper = styled.div<React.CSSProperties>`

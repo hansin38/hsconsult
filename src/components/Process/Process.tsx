@@ -1,70 +1,46 @@
 import React from 'react';
 import { ProcessCard, ProcessCardWrapper, ProcessContainer, ProcessTextWrpper } from 'src/components/Process/Process.styles';
-import Table from '@/components/Table/Table';
-import { INITAL_RECRUIT_PROCESS_DATA } from '@/components/Process/Process.constants';
 
+const Arrow = ({ color }: { color: string }) =>
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="28" viewBox="0 0 17 28" fill="none">
+  <path d="M2.5 2L14.5 14L2.5 26" stroke={color} strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>;
 const Process = (): React.ReactElement => {
   return (
     <ProcessContainer>
       <ProcessTextWrpper>
-        <h3>인재상</h3>
-        <h5>한신콘설탄트와 함께 미래를 그려나가고 싶은 이들의 모습입니다.</h5>
+        <h3>채용프로세스</h3>
       </ProcessTextWrpper>
       <ProcessCardWrapper>
-        <ProcessCard>
-          <div></div>
-          <div>
-            <h3>
-              믿음 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
+        <ProcessCard color={'#DBE5FF'}>
+          <i>
+            <img src='/images/resume.png' alt='resume' />
+          </i>
+          지원서 접수
         </ProcessCard>
-        <ProcessCard>
-          <div></div>
-          <div>
-            <h3>
-              소망 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
+        <Arrow color={'#DBE5FF'}/>
+        <ProcessCard color={'#8DA9F1'}>
+          <i>
+            <img src='/images/approved.png' alt='approved' />
+          </i>
+          서류 전형
         </ProcessCard>
-        <ProcessCard>
-          <div></div>
-          <div>
-            <h3>
-              사랑 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
+        <Arrow color={'#8DA9F1'}/>
+        <ProcessCard color={'#5477D0'}>
+          <i>
+            <img src='/images/interview.png' alt='interview' />
+          </i>
+          면접전형<br />
+          (실무/CEO)
         </ProcessCard>
-        <ProcessCard>
-          <div></div>
-          <div>
-            <h3>
-              고기 <span>Trust</span>
-            </h3>
-            <h5>
-              창의적 사고와 실천으로
-              <br />
-              변화와 혁신을 추구하는 인재
-            </h5>
-          </div>
+        <Arrow color={'#5477D0'}/>
+        <ProcessCard color={'#0031B0'}>
+          <i>
+            <img src='/images/handshake.png' alt='handshake' />
+          </i>
+          최종합격
         </ProcessCard>
       </ProcessCardWrapper>
-      <Table data={INITAL_RECRUIT_PROCESS_DATA} />
     </ProcessContainer>
   );
 };

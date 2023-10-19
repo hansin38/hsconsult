@@ -34,44 +34,37 @@ export const TalentCardWrapper = styled.div<React.CSSProperties>`
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const TalentCard = styled.div<React.CSSProperties>`
   display: flex;
+  flex-direction: column;
   padding: 48px 40px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
-  border-radius: 4px;
-  border: 1px solid #efefef;
   background: #fff;
   width: 519px;
   & > div:first-of-type {
-    width: 64px;
-    height: 64px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    background: #efefef;
+    background: #f9f9f9;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   & > div:last-of-type {
     display: flex;
     flex-direction: column;
-    & > h3 {
-      color: #000;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 36px;
-      & > span {
-        color: #2951ba;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-      }
-    }
-    & > h5 {
-      color: #525252;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-    }
+    color: #000;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px; /* 150% */
+
   }
 `;

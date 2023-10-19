@@ -1,6 +1,7 @@
 import React from 'react';
 import { HelloContainer, HelloImageWrapper, HelloTextWrpper, HelloTitle, ProfileImageWrapper } from 'src/components/Hello/Hello.styles';
 import { Logo } from '@/components/svg/Logo';
+import { TalentTextWrpper } from '@/components/Talent/Talent.styles';
 
 const Hello = (): React.ReactElement => {
   return (
@@ -8,8 +9,10 @@ const Hello = (): React.ReactElement => {
       {/*<HelloImageWrapper>*/}
       {/*  <Image src="/images/hello.jpg" layout={'fill'} alt="상단 이미지 영역" />*/}
       {/*</HelloImageWrapper>*/}
-      <HelloTitle>인사말</HelloTitle>
-      <Logo height={100} />
+      <TalentTextWrpper>
+        <h3>인사말</h3>
+      </TalentTextWrpper>
+      <Logo height={64} />
       <HelloTextWrpper>
           {/* eslint-disable-next-line max-len */}
           1979년 창업이래 40년간 전기분야 엔지니어링(설계, 감리)사업에 참여하였으며,

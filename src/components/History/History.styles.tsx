@@ -6,6 +6,7 @@ export const HistoryContainer = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 34px;
 `;
 
 export const HistoryContainerTabs = styled.div<React.CSSProperties>`
