@@ -31,7 +31,7 @@ export const menu = [
         tabs: [
           { path: 'electrical-field', name: '전기분야' },
           { path: 'communication-field', name: '통신분야' },
-          { path: 'railway-and-other-fields', name: '철도기타분야' },
+          { path: 'railway-and-other-fields', name: '철도신호분야' },
         ],
       },
       {
@@ -40,7 +40,7 @@ export const menu = [
         tabs: [
           { path: 'electrical-field', name: '전기분야' },
           { path: 'communication-field', name: '통신분야' },
-          { path: 'railway-and-other-fields', name: '철도기타분야' },
+          { path: 'railway-and-other-fields', name: '철도신호분야' },
         ],
       },
       { path: 'construction', name: '공사시공분야' },
@@ -71,7 +71,12 @@ export const menu = [
     target: '/contact/directions',
     subPath: [{ path: 'directions', name: '찾아오시는길' }],
   },
-] as {path: string; name: string; target: string; subPath: ({path: string; name: string; tabs: {path: string; name: string}[]} | {path: string; name: string; tabs?: undefined})[]}[];
+] as {
+  path: string;
+  name: string;
+  target: string;
+  subPath: ({ path: string; name: string; tabs: { path: string; name: string }[] } | { path: string; name: string; tabs?: undefined })[];
+}[];
 export const adminMenu = [
   {
     path: '_admin',
@@ -82,7 +87,12 @@ export const adminMenu = [
       { path: 'inquiry', name: '문의확인' },
     ],
   },
-] as {path: string; name: string; target: string; subPath: ({path: string; name: string; tabs: {path: string; name: string}[]} | {path: string; name: string; tabs?: undefined})[]}[];
+] as {
+  path: string;
+  name: string;
+  target: string;
+  subPath: ({ path: string; name: string; tabs: { path: string; name: string }[] } | { path: string; name: string; tabs?: undefined })[];
+}[];
 
 export const INITIAL_CAROUSEL_ITEMS = [
   {

@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Slider from 'react-slick';
+import Table from '@/components/Table/Table';
 import {
   ElectricalFieldSection,
   ElectricalFieldSliderWrpper,
@@ -8,13 +9,13 @@ import {
   SliderItem,
   SliderTextWrpper,
   SliderWrapper,
-} from '@/components/Supervision/components/ElectricalField/ElectricalField.styles';
-import Table from '@/components/Table/Table';
+} from './ConstructionField.styles';
+import { INITAL_ELECTRICAL_FIELD_DATA } from './ConstructionField.constants';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { INITAL_ELECTRICAL_FIELD_DATA } from './RailwayAndOtherFields.constants';
-const RailwayAndOtherFields = (): React.ReactElement => {
+
+const ElectricalField = (): React.ReactElement => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -42,9 +43,9 @@ const RailwayAndOtherFields = (): React.ReactElement => {
         <ElectricalFieldSliderWrpper>
           <SliderWrapper>
             <Slider {...settings}>
-              <SliderItem bgImage={'/images/sub-slide-banner01.png'} />
-              <SliderItem bgImage={'/images/sub-slide-banner02.png'} />
-              <SliderItem bgImage={'/images/sub-slide-banner03.png'} />
+              <SliderItem bgImage={'/images/field-content-slide-banner01.jpg'} />
+              <SliderItem bgImage={'/images/field-content-slide-banner02.jpg'} />
+              <SliderItem bgImage={'/images/field-content-slide-banner03.jpg'} />
             </Slider>
           </SliderWrapper>
           <SliderTextWrpper>
@@ -54,12 +55,12 @@ const RailwayAndOtherFields = (): React.ReactElement => {
             <h6>2000.00.00 - 2000.00.00</h6>
           </SliderTextWrpper>
         </ElectricalFieldSliderWrpper>
-        <ElectricalFieldSection>
+        {/* <ElectricalFieldSection>
           <Table data={INITAL_ELECTRICAL_FIELD_DATA} />
-        </ElectricalFieldSection>
+        </ElectricalFieldSection> */}
       </ElectricalFieldTextWrpper>
     </Fragment>
   );
 };
 
-export default RailwayAndOtherFields;
+export default ElectricalField;
