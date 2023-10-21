@@ -162,6 +162,7 @@ export const MainSliderItem01 = styled.div<React.CSSProperties>`
   margin: 0 auto;
   gap: 8px;
   padding-top: 85px;
+  letter-spacing: 1px;
   & > h3 {
     color: #fff;
     font-size: 32px;

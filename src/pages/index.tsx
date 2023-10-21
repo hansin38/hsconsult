@@ -33,71 +33,58 @@ const Home: NextPage = (): React.ReactElement => {
       <BusinessSection>
         <SectionTitle>비즈니스 분야</SectionTitle>
         <SectionDescription>
-          2007년 설립된 (주)서현기술단은 토목(철도), 토질 및 기초, 토목구조, 공공측량을 바탕으로 철도계획, 설계, 감리, 타당성조사, 컨설턴트 등 토목엔지니어링 서비스를 제공하는
-          회사입니다.
+          1979년 창업이래 40년간 전기분야 엔지니어링사업에 참여하였으며, <br />발전, 송변전, 배전시설을 비롯한 공공 및 민수용 각종 건설사업의 설계, 감리용역을 성공적으로 이끌어 왔습니다.
         </SectionDescription>
         <SectionBody>
-          <SectionBodyItem href={'/field/architecture'}>
+          <SectionBodyItem href={'/intro/hello'}>
             <img src="/images/section_electric.webp" alt="" />
-            <div>회사소개</div>
+            <div>설계분야</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 전기설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 전기설계 분야를 더더욱 발전시킬 것입니다.
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/field/construction'}>
             <img src="/images/section_communication.webp" alt="" />
-            <div>고객지원</div>
+            <div>감리분야</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 전기설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 전기설계 분야를 더더욱 발전시킬 것입니다.
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/field/supervision'}>
             <img src="/images/section_etc.webp" alt="" />
-            <div>채용정보</div>
+            <div>공사시공</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 전기설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 전기설계 분야를 더더욱 발전시킬 것입니다.
             </div>
           </SectionBodyItem>
         </SectionBody>
       </BusinessSection>
       <ActionSection>
-        <SectionTitle>한신콘설탄트는 이렇게 합니다.</SectionTitle>
+        {/*<SectionTitle>한신콘설탄트는 이렇게 합니다.</SectionTitle>
         <SectionDescription color={'rgba(255, 255, 255, 0.60)'}>
           피고인의 자백이 고문·폭행·협박·구속의 부당한 장기화 또는 기망 기타의 방법에 의하여 자의로 진술된 것이 아니라고 인정될 때<br />
           또는 정식재판에 있어서 피고인의 자백이 그에게 불리한 유일한 증거일 때에는 이를 유죄의 증거로 삼거나 이를 이유로 처벌할 수 없다.
-        </SectionDescription>
+        </SectionDescription>*/}
         <SectionBody>
           <SectionBodyItem href={'/intro/hello'}>
             <img src="/images/icon_intro.svg" alt="" />
             <div>회사소개</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              인사말과 조직도, 연혁 을 확인할 수 있습니다.
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/customer/notice'}>
             <img src="/images/icon_customer.svg" alt="" />
             <div>고객지원</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              공지사항과 문의를 할 수 있습니다.
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/recruit/talent'}>
             <img src="/images/icon_recruit.svg" alt="" />
             <div>채용정보</div>
             <div>
-              해당 분야에 대한 설명을 적어줍니다.
-              <br />
-              이러쿵 저러쿵 우리 이런 거 잘해요. 맡겨만 주세요.
+              채용정보를 확인하실 수 있습니다.
             </div>
           </SectionBodyItem>
         </SectionBody>
