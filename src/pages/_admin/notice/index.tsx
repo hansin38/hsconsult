@@ -24,7 +24,7 @@ const AdminCustomerNoticePage: NextPage = (): React.ReactElement => {
   const { id } = router.query;
   const { data } = useQuery(['notice-detail', id], () => getArticle({ table: 'notice', id: Number(id) }), { enabled: Boolean(id) });
   const createInquiry = (data) => createArticle({ table: 'notice', ...data });
-  const updateInquiry = (data) => updateArticle({ table: 'notice', id, ...data });
+  const updateInquiry = (data) => updateArticle({ table: 'notice', id: Number(id), update: data });
   const InquiryResolverScheme = yup.object().shape({
     title: yup.string().required(),
     content: yup.string().required(),

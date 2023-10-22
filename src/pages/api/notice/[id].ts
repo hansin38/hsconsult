@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { sql } from '@vercel/postgres';
+import { update } from 'lodash';
 
 type ResponseData = {
   status: 'success' | 'error';
@@ -17,14 +18,14 @@ SELECT * FROM notice WHERE id = ${id};
 
 const doPatch = async (req, res) => {
   const { id } = req.query;
-  const updateBody = req.body.update.map(([keys, value]) => `${keys} = ${value}`).join(', ');
+  const update = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
   const { rows } = await sql`
 UPDATE notice
-${updateBody}
+SET title = ${update.title}, content = ${update.content}
 WHERE id = ${id};
 `;
-  if (rows.length === 0) return res.status(404).json({ status: 'error', data: 'Not Found' });
   return res.status(200).json({ status: 'success', data: rows[0] });
+    // return res.status(200).json({ status: 'success' });
 };
 
 const doDelete = async (req, res) => {

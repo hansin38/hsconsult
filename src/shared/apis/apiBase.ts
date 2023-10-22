@@ -20,11 +20,11 @@ const apiBase = function (defaultConfig: AxiosRequestConfig) {
 
     switch (operation) {
       case REQUESTS_OPERATION.PATCH:
-        return (await api.patch(url, data) as AxiosResponse<T>);
+        return (await api.patch(url, data, { headers }) as AxiosResponse<T>);
       case REQUESTS_OPERATION.POST:
         return (await api.post(url, data, { headers }) as AxiosResponse<T>);
       case REQUESTS_OPERATION.PUT:
-        return (await api.put(url, data, { headers }) as AxiosResponse<T>);
+        return (await api.put(url, data, { headers, data }) as AxiosResponse<T>);
       case REQUESTS_OPERATION.DELETE:
         return (await api.delete(url, { headers, data }) as AxiosResponse<T>);
       default:
