@@ -76,6 +76,7 @@ export const InquiryButtonWrapper = styled.div`
   gap: 12px;
   justify-content: center;
   margin-top: 32px;
+
   & > button {
     display: flex;
     width: 120px;
@@ -84,6 +85,7 @@ export const InquiryButtonWrapper = styled.div`
     align-items: center;
     gap: 10px;
     box-sizing: border-box;
+
     &[type="button"] {
       border: 1px solid #EFEFEF;
       background-color: #FFF;
@@ -91,7 +93,18 @@ export const InquiryButtonWrapper = styled.div`
       font-size: 16px;
       font-weight: 600;
       line-height: 24px;
+
+      &.green {
+        background-color: #00b03b;
+        color: #ffffff;
+      }
+
+      &.orange {
+        background-color: #b04900;
+        color: #ffffff;
+      }
     }
+
     &[type="submit"], &:last-child, &:last-of-type {
       background-color: #0031B0;
       color: #ffffff;

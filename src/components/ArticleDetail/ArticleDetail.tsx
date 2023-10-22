@@ -1,13 +1,11 @@
 import React from 'react';
-import { useRouter } from 'next/router';
 import dayjs from 'dayjs';
 import { UseQueryResult } from 'react-query';
-import { IGetArticleReturn, IGetPageReturn, TArticle } from '@/shared/types/api.types';
+import { IGetArticleReturn } from '@/shared/types/api.types';
 import { ArticleDetailContent, ArticleDetailTable } from './ArticleDetail.styles';
 
 
 const ArticleDetail = ({ data: res, isLoading }: UseQueryResult<IGetArticleReturn, unknown>): React.ReactElement => {
-  const router = useRouter();
   const today = dayjs();
   if (isLoading) return (<div>loading...</div>);
   return (

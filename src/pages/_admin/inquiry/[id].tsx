@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';
 import { dehydrate, useQuery } from 'react-query';
@@ -9,9 +9,17 @@ import { getArticle } from '@/shared/apis/appApi';
 import ArticleDetail from '@/components/ArticleDetail/ArticleDetail';
 import { InquiryButtonWrapper } from '@/components/Inquiry/Inquiry.styles';
 import queryClient from '@/shared/configs/queryClient';
+import { useAdmin } from '@/shared/useAdmin';
 
 const AdminCustomerNoticeDetailPage: NextPage = (): React.ReactElement => {
   const router = useRouter();
+  const { isAdmin, isClient } = useAdmin();
+  useEffect(() => {
+    if (!isClient) return;
+    if (!isAdmin) {
+      router.push('/_admin');
+    }
+  }, [isClient]);
   const { id = '1' } = router.query;
   const queryData = useQuery(['inquiry-detail', id], () => getArticle({ table: 'inquiry', id: Number(id) }));
   return (
