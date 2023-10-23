@@ -51,7 +51,7 @@ export const TalentCard = styled.div<React.CSSProperties>`
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: #f9f9f9;
+    //background: #f9f9f9;
     img {
       width: 100%;
       height: 100%;
