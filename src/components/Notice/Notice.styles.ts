@@ -19,7 +19,7 @@ export const NoticeTextWrpper = styled.div<React.CSSProperties>`
   margin-bottom: 32px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }

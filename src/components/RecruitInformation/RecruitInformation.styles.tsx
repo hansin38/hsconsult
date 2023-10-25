@@ -19,13 +19,13 @@ export const RecruitInformationTextWrpper = styled.div<React.CSSProperties>`
   gap: 8px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
     & > span {
       color: #0031b0;
       /* H4 */
-      font-size: 24px;
+      font-size: 32px;
       font-weight: 700;
       line-height: 36px;
     }

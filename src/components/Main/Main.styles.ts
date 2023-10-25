@@ -53,7 +53,7 @@ export const SectionBodyItem = styled(Link)`
   }
   & > div:first-of-type {
     margin-bottom: 12px;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }
@@ -101,7 +101,7 @@ export const Section = styled.section<{ multi?: boolean }>`
               content: unset !important;
             }
             & > ${SectionTitle} {
-              font-size: 24px;
+              font-size: 32px;
               line-height: 36px;
             }
           }

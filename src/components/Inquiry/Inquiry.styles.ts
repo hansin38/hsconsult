@@ -18,7 +18,7 @@ export const InquiryTextWrpper = styled.div<React.CSSProperties>`
   gap: 8px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }

@@ -1,5 +1,7 @@
 import React from 'react';
 import { ProcessCard, ProcessCardWrapper, ProcessContainer, ProcessTextWrpper } from 'src/components/Process/Process.styles';
+import { INITAL_RECRUIT_PROCESS_DATA } from '@/components/Process/Process.constants';
+import Table from '@/components/Table/Table';
 
 const Arrow = ({ color }: { color: string }) =>
 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="28" viewBox="0 0 17 28" fill="none">
@@ -41,6 +43,7 @@ const Process = (): React.ReactElement => {
           최종합격
         </ProcessCard>
       </ProcessCardWrapper>
+      <Table data={INITAL_RECRUIT_PROCESS_DATA} />
     </ProcessContainer>
   );
 };

@@ -44,7 +44,7 @@ export const menu = [
           { path: 'railway-and-other-fields', name: '철도신호분야' },
         ],
       },
-      { path: 'construction', name: '공사시공분야' },
+      { path: 'construction', name: '철도시공분야' },
     ],
   },
   {
@@ -63,7 +63,6 @@ export const menu = [
     subPath: [
       { path: 'talent', name: '인재상' },
       { path: 'process', name: '채용프로세스' },
-      { path: 'overview', name: '채용개요' },
       { path: 'recruit-information', name: '채용안내' },
     ],
   },
@@ -104,7 +103,48 @@ export const INITIAL_CAROUSEL_ITEMS = [
     render: () => {
       return (
         <MainSliderItem01>
-          <h3>한신콘설탄트 홈페이지에 오신것을 환영합니다.</h3>
+          <h3>
+            HANSHIN CONSULTANT INC<br />
+            한신콘설탄트
+          </h3>
+          {/*<h5>*/}
+          {/*  1979년 창업이래 40년간 전기분야 엔지니어링사업에 참여하였으며, <br />*/}
+          {/*  발전, 송변전, 배전시설을 비롯한 공공 및 민수용 각종 건설사업의 설계, 감리용역을 성공적으로 이끌어 왔습니다.*/}
+          {/*</h5>*/}
+        </MainSliderItem01>
+      );
+    },
+  },
+  {
+    id: 1,
+    height: '590px',
+    imgSrc: '/images/main-slide-01.jpg',
+    render: () => {
+      return (
+        <MainSliderItem01>
+          <h3>
+            HANSHIN CONSULTANT INC<br />
+            한신콘설탄트
+          </h3>
+          {/*<h5>*/}
+          {/*  1979년 창업이래 40년간 전기분야 엔지니어링사업에 참여하였으며, <br />*/}
+          {/*  발전, 송변전, 배전시설을 비롯한 공공 및 민수용 각종 건설사업의 설계, 감리용역을 성공적으로 이끌어 왔습니다.*/}
+          {/*</h5>*/}
+        </MainSliderItem01>
+      );
+    },
+  },
+  {
+    id: 2,
+    height: '590px',
+    imgSrc: '/images/main-slide-01.jpg',
+    render: () => {
+      return (
+        <MainSliderItem01>
+          <h3>
+            HANSHIN CONSULTANT INC<br />
+            한신콘설탄트
+          </h3>
           {/*<h5>*/}
           {/*  1979년 창업이래 40년간 전기분야 엔지니어링사업에 참여하였으며, <br />*/}
           {/*  발전, 송변전, 배전시설을 비롯한 공공 및 민수용 각종 건설사업의 설계, 감리용역을 성공적으로 이끌어 왔습니다.*/}

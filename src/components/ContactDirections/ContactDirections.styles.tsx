@@ -26,13 +26,13 @@ export const ContactDirectionsTextWrpper = styled.div<React.CSSProperties>`
   margin-bottom: 24px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }
   & > h5 {
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     word-break: keep-all;
@@ -68,13 +68,13 @@ export const SectionContents = styled.div<React.CSSProperties>`
       & > div:first-of-type {
         color: #000;
         width: 84px;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 24px;
       }
       & > div:last-of-type {
         color: #545454;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 24px;
       }

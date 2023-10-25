@@ -20,7 +20,7 @@ const Supervision = (): React.ReactElement => {
       <SupervisionImageWrapper>
         <Image src="/images/field-content-top-banner01.jpg" layout={'fill'} alt="상단 이미지 영역" />
       </SupervisionImageWrapper>
-      <SupervisionTitle>공사시공분야</SupervisionTitle>
+      <SupervisionTitle>철도시공분야</SupervisionTitle>
 
       {tab === 'electrical-field' && <ConstructionField />}
     </SupervisionContainer>

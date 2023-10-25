@@ -52,7 +52,7 @@ const Home: NextPage = (): React.ReactElement => {
           </SectionBodyItem>
           <SectionBodyItem href={'/field/supervision'}>
             <img src="/images/section_etc.webp" alt="" />
-            <div>공사시공</div>
+            <div>철도시공</div>
             <div>
               전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 전기설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 전기설계 분야를 더더욱 발전시킬 것입니다.
             </div>

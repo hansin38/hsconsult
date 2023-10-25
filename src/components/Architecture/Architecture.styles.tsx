@@ -16,7 +16,7 @@ export const ArchitectureTextWrpper = styled.div<React.CSSProperties>`
   gap: 24px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }
@@ -39,7 +39,7 @@ export const ArchitectureTitle = styled.div<React.CSSProperties>`
   border-left: 4px solid #0031b0;
   padding-left: 20px;
   color: #000;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 36px;
 `;

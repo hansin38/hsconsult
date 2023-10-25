@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { TableFlexRow, TableRow } from '@/components/Table/Table.styles';
 
 export const ProcessContainer = styled.div<React.CSSProperties>`
   position: relative;
@@ -7,6 +8,9 @@ export const ProcessContainer = styled.div<React.CSSProperties>`
   flex-direction: column;
   margin-top: 34px;
   gap: 32px;
+  ${TableRow}, ${TableFlexRow} {
+    font-size: 20px;
+  }
 `;
 
 export const ProcessTextWrpper = styled.div<React.CSSProperties>`
@@ -18,7 +22,7 @@ export const ProcessTextWrpper = styled.div<React.CSSProperties>`
   gap: 8px;
   & > h3 {
     color: #000;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 36px;
   }
@@ -55,7 +59,7 @@ export const ProcessCard = styled.div<{ color?: string}>`
 
   color: #222;
 
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 150% */

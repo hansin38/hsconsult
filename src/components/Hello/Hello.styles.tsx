@@ -17,7 +17,7 @@ export const HelloTextWrpper = styled.div<React.CSSProperties>`
   //max-width: 740px;
   gap: 24px;
   color: #000;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   word-break: keep-all;
@@ -52,7 +52,7 @@ export const HelloTitle = styled.div<React.CSSProperties>`
   border-left: 4px solid #0031b0;
   padding-left: 20px;
   color: #000;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 24px;

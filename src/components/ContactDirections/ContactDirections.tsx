@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Image from 'next/image';
 import {
   ContactDirectionsContainer,
   ContactDirectionsImageWrapper,
@@ -10,7 +9,7 @@ import {
 } from 'src/components/ContactDirections/ContactDirections.styles';
 import BreadCrumb from '@/components/BreadCrumb/BreadCrumb';
 import { MainLocationMap, MainLocationMapContainer } from '@/components/Main/MainLocation/MainLocation.styles';
-import { location } from '@/components/Main/MainLocation/MainLocation.constants';
+import MapButton from '@/components/svg/MapButton';
 
 const ContactDirections = (): React.ReactElement => {
   return (
@@ -34,7 +33,7 @@ const ContactDirections = (): React.ReactElement => {
               <div>
                 <div>주소</div>
                 <div>
-                  <b>부산광역시 중구 고가길32 (보수동1가)</b>
+                  <b>부산광역시 중구 고가길32 (보수동1가)</b><MapButton style={{ zoom: 0.6, marginBlock: '-6px', marginLeft: '5px', cursor: 'pointer' }} onClick={()=> window.open('https://naver.me/FM11bWsM', '_blank')}/>
                 </div>
               </div>
               <div>
@@ -62,7 +61,7 @@ const ContactDirections = (): React.ReactElement => {
               <div>
                 <div>주소</div>
                 <div>
-                  <b>서울특별시 송파구 가락로240 (방이동)</b>
+                  <b>서울특별시 송파구 가락로240 (방이동)</b><MapButton style={{ zoom: 0.6, marginBlock: '-6px', marginLeft: '5px', cursor: 'pointer' }} onClick={()=> window.open('https://naver.me/xHDDusLr', '_blank')}/>
                 </div>
               </div>
               <div>
