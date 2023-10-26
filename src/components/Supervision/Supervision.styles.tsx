@@ -32,7 +32,7 @@ export const SupervisionTextWrapper = styled.div<React.CSSProperties>`
 export const SupervisionImageWrapper = styled.div<React.CSSProperties>`
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 283px;
 `;
 
 export const SupervisionTitle = styled.div<React.CSSProperties>`

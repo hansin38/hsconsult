@@ -18,7 +18,7 @@ const Supervision = (): React.ReactElement => {
   return (
     <SupervisionContainer>
       <SupervisionImageWrapper>
-        <Image src="/images/field-content-top-banner01.jpg" layout={'fill'} alt="상단 이미지 영역" />
+        <Image src="/images/rail_top.webp" layout={'fill'} alt="상단 이미지 영역" />
       </SupervisionImageWrapper>
       <SupervisionTitle>철도시공분야</SupervisionTitle>
 

@@ -20,7 +20,7 @@ const Supervision = (): React.ReactElement => {
   return (
     <ArchitectureContainer>
       <ArchitectureImageWrapper>
-        <Image src="/images/field-content-top-banner01.jpg" layout={'fill'} alt="상단 이미지 영역" />
+        <Image src="/images/architecture_top.webp" layout={'fill'} alt="상단 이미지 영역" />
       </ArchitectureImageWrapper>
       <ArchitectureTitle>설계분야</ArchitectureTitle>
       <ArchitectureContainerTabs>

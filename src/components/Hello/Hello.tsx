@@ -1,14 +1,15 @@
 import React from 'react';
-import { HelloContainer, HelloImageWrapper, HelloTextWrpper, HelloTitle, ProfileImageWrapper } from 'src/components/Hello/Hello.styles';
+import Image from 'next/image';
+import { HelloContainer, HelloImageWrapper, HelloTextWrpper } from 'src/components/Hello/Hello.styles';
 import { Logo } from '@/components/svg/Logo';
 import { TalentTextWrpper } from '@/components/Talent/Talent.styles';
 
 const Hello = (): React.ReactElement => {
   return (
     <HelloContainer>
-      {/*<HelloImageWrapper>*/}
-      {/*  <Image src="/images/hello.jpg" layout={'fill'} alt="상단 이미지 영역" />*/}
-      {/*</HelloImageWrapper>*/}
+      <HelloImageWrapper>
+        <Image src="/images/hello_top.webp" layout={'fill'} alt="상단 이미지 영역" />
+      </HelloImageWrapper>
       <TalentTextWrpper>
         <h3>인사말</h3>
       </TalentTextWrpper>

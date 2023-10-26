@@ -13,6 +13,22 @@ export const ProcessContainer = styled.div<React.CSSProperties>`
   }
 `;
 
+export const SectionTitle = styled.div<React.CSSProperties>`
+  border-left: 4px solid #0031b0;
+  padding-left: 20px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+`;
+
+
+export const ProcessImageWrapper = styled.div<React.CSSProperties>`
+  position: relative;
+  width: 100%;
+  height: 283px;
+`;
+
 export const ProcessTextWrpper = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;

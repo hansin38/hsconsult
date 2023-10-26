@@ -32,7 +32,7 @@ export const ArchitectureTextWrpper = styled.div<React.CSSProperties>`
 export const ArchitectureImageWrapper = styled.div<React.CSSProperties>`
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 283px;
 `;
 
 export const ArchitectureTitle = styled.div<React.CSSProperties>`

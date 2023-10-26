@@ -1,7 +1,8 @@
 import React from 'react';
-import { ProcessCard, ProcessCardWrapper, ProcessContainer, ProcessTextWrpper } from 'src/components/Process/Process.styles';
+import { ProcessCard, ProcessCardWrapper, ProcessContainer, ProcessImageWrapper, ProcessTextWrpper, SectionTitle } from 'src/components/Process/Process.styles';
 import { INITAL_RECRUIT_PROCESS_DATA } from '@/components/Process/Process.constants';
 import Table from '@/components/Table/Table';
+import Image from 'next/image';
 
 const Arrow = ({ color }: { color: string }) =>
 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="28" viewBox="0 0 17 28" fill="none">
@@ -10,6 +11,9 @@ const Arrow = ({ color }: { color: string }) =>
 const Process = (): React.ReactElement => {
   return (
     <ProcessContainer>
+      <ProcessImageWrapper>
+        <Image src="/images/process_top.webp" layout={'fill'} alt="상단 이미지 영역" />
+      </ProcessImageWrapper>
       <ProcessTextWrpper>
         <h3>채용프로세스</h3>
       </ProcessTextWrpper>
@@ -43,6 +47,9 @@ const Process = (): React.ReactElement => {
           최종합격
         </ProcessCard>
       </ProcessCardWrapper>
+      <SectionTitle>
+        채용개요
+      </SectionTitle>
       <Table data={INITAL_RECRUIT_PROCESS_DATA} />
     </ProcessContainer>
   );

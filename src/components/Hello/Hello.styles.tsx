@@ -27,7 +27,8 @@ export const HelloTextWrpper = styled.div<React.CSSProperties>`
 export const HelloImageWrapper = styled.div<React.CSSProperties>`
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 283px;
+  margin-bottom: 24px;
 `;
 
 export const ProfileImageWrapper = styled.div<React.CSSProperties>`

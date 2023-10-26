@@ -9,6 +9,11 @@ export const TalentContainer = styled.div<React.CSSProperties>`
   gap: 32px;
 `;
 
+export const TalentImageWrapper = styled.div<React.CSSProperties>`
+  position: relative;
+  width: 100%;
+  height: 283px;
+`;
 export const TalentTextWrpper = styled.div<React.CSSProperties>`
   display: flex;
   flex-direction: column;
