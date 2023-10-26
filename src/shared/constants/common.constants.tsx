@@ -99,7 +99,7 @@ export const INITIAL_CAROUSEL_ITEMS = [
   {
     id: 0,
     height: '590px',
-    imgSrc: '/images/main-slide-01.jpg',
+    imgSrc: '/images/main1.webp',
     render: () => {
       return (
         <MainSliderItem01>
@@ -118,7 +118,7 @@ export const INITIAL_CAROUSEL_ITEMS = [
   {
     id: 1,
     height: '590px',
-    imgSrc: '/images/main-slide-01.jpg',
+    imgSrc: '/images/main2.webp',
     render: () => {
       return (
         <MainSliderItem01>
@@ -137,7 +137,7 @@ export const INITIAL_CAROUSEL_ITEMS = [
   {
     id: 2,
     height: '590px',
-    imgSrc: '/images/main-slide-01.jpg',
+    imgSrc: '/images/main3.webp',
     render: () => {
       return (
         <MainSliderItem01>
