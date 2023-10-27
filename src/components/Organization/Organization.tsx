@@ -23,7 +23,7 @@ const Organization = (): React.ReactElement => {
           <h3>조직도</h3>
         </TalentTextWrpper>
         <OrganizationContent>
-          <Image src="/images/organization.svg" layout={'fill'} objectFit="contain" alt="조직도 상세" />
+          <Image src="/images/organization.webp" layout={'fill'} objectFit="contain" alt="조직도 상세" />
         </OrganizationContent>
       </OrganizationWrapper>
     </OrganizationContainer>
