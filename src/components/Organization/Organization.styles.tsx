@@ -62,7 +62,7 @@ export const OrganizationContent = styled.div<React.CSSProperties>`
   border-radius: 4px;
   padding: 48px 0;
   position: relative;
-  height: 400px;
+  height: 618px;
 `;
 
 export const OrganizationTitle = styled.div<React.CSSProperties>`
