@@ -23,14 +23,15 @@ import { getPage } from '@/shared/apis/appApi';
 import ArticleList from '@/components/ArticleList/ArticleList';
 
 const Home: NextPage = (): React.ReactElement => {
-
+<head>
+  <style>
+    p{order:1px}
+    #justify{text-align:justify;}
+  </style>
+</head>
   const queryData = useQuery(['notice', 1], () => getPage({ table: 'notice', limit: 10, page: Number(1) }));
   return (
     <Layout transparentHeader>
-      <style>
-        p{order:1px}
-        #justify{text-align:justify;}
-      </style>
       <CarouselSection>
         <Carousel data={INITIAL_CAROUSEL_ITEMS} />
       </CarouselSection>
