@@ -174,5 +174,6 @@ export const MainSliderItem01 = styled.div<React.CSSProperties>`
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    text-align: justify;
   }
 `;
