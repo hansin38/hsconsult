@@ -57,7 +57,7 @@ export const CarouselDots = styled.div`
 
 export const CarouselNumber = styled.div`
   color: #fff;
-  text-align: center;
+  text-align: justify;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;

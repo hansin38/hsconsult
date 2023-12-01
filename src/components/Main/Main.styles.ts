@@ -146,9 +146,6 @@ export const ActionSection = styled(Section)`
     & > div {
       text-align: center;
     }
-    & > p {
-      text-align: justify;
-    }
   }
 `;
 export const LocationSection = styled(Section)``;
