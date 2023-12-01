@@ -144,6 +144,9 @@ export const ActionSection = styled(Section)`
       background-color: white;
     }
     & > div {
+      text-align: center;
+    }
+    & > p {
       text-align: justify;
     }
   }
