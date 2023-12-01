@@ -56,13 +56,11 @@ export const SectionBodyItem = styled(Link)`
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
-    text-align: justify;
   }
   & > div:last-of-type {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: justify;
   }
 `;
 
