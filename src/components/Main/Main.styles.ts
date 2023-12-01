@@ -40,7 +40,7 @@ export const SectionDescription = styled.div<{ color?: string }>`
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 24px;
-  text-align : justify;
+  text-align: justify;
   ${({ color }) => (color ? `color: ${color};` : '')}
 `;
 
