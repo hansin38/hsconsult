@@ -70,7 +70,7 @@ const Home: NextPage = (): React.ReactElement => {
             <img src="/images/icon_intro.svg" alt="" />
             <div>회사소개</div>
             <div>
-              인사말과 조직도, 연혁 을 확인할 수 있습니다.
+              인사말과 조직도, 연혁을 확인할 수 있습니다.
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/customer/notice'}>
