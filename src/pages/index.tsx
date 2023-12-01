@@ -27,6 +27,10 @@ const Home: NextPage = (): React.ReactElement => {
   const queryData = useQuery(['notice', 1], () => getPage({ table: 'notice', limit: 10, page: Number(1) }));
   return (
     <Layout transparentHeader>
+      <style>
+        p{order:1px}
+        #justify{text-align:justify;}
+      </style>
       <CarouselSection>
         <Carousel data={INITIAL_CAROUSEL_ITEMS} />
       </CarouselSection>
@@ -40,21 +44,21 @@ const Home: NextPage = (): React.ReactElement => {
             <img src="/images/architecture_sec.webp" alt="" />
             <div>설계분야</div>
             <div>
-              <p>철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 설계 분야를 더더욱 발전시킬 것입니다.</p>
+              <p id="justify">철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 설계에 대하여 많은 기본 및 실시설계 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 설계 분야를 더더욱 발전시킬 것입니다.</p>
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/field/construction'}>
             <img src="/images/supervision_sec.webp" alt="" />
             <div>감리분야</div>
             <div>
-              <p>전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 감리사업에 대하여 많은 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 감리사업 분야를 더더욱 발전시킬 것입니다.</p>
+              <p id="justify">전기철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 감리사업에 대하여 많은 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 감리사업 분야를 더더욱 발전시킬 것입니다.</p>
             </div>
           </SectionBodyItem>
           <SectionBodyItem href={'/field/supervision'}>
             <img src="/images/rail_sec.webp" alt="" />
             <div>철도시공분야</div>
             <div>
-              <p>철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 시공부분에 대하여 많은 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 시공분야를 더더욱 발전시킬 것입니다.</p>
+              <p id="justify">철도분야를 주축으로 송,변전설비, 공항, 도로, 공공 시설 및 기타의 시공부분에 대하여 많은 경험을 갖고있으며 그러한 바탕으로 기술역량에 대한 무한한 잠재력과 사업수행능력을 인정받아 사업영역을 성공적으로 넓혀왔으며 앞으로 이와 같은 신뢰를 바탕으로 시공분야를 더더욱 발전시킬 것입니다.</p>
             </div>
           </SectionBodyItem>
         </SectionBody>
