@@ -40,6 +40,7 @@ export const SectionDescription = styled.div<{ color?: string }>`
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 24px;
+  text-align : justify;
   ${({ color }) => (color ? `color: ${color};` : '')}
 `;
 
@@ -174,6 +175,5 @@ export const MainSliderItem01 = styled.div<React.CSSProperties>`
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    text-align: justify;
   }
 `;
