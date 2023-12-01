@@ -13,7 +13,7 @@ export default function MyDocument() {
         <meta name="keywords" content="한신콘설탄트" />
         <meta name="author" content="sanguneo, juno" />
         <style>
-          #justify{text-align:justify;}
+          p {text-align:justify;}
         </style>
       </Head>
       <body>
