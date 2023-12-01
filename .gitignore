@@ -43,3 +43,4 @@ sw.*
 
 # macOS
 .DS_Store
+src/pages/index.tsx
