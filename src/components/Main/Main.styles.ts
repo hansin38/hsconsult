@@ -52,7 +52,7 @@ export const SectionBodyItem = styled(Link)`
     margin-bottom: 24px;
   }
   & > div:first-of-type {
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
@@ -144,7 +144,7 @@ export const ActionSection = styled(Section)`
       background-color: white;
     }
     & > div {
-      text-align: center;
+      text-align: justify;
     }
   }
 `;
