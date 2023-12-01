@@ -12,6 +12,10 @@ export default function MyDocument() {
         <meta name="theme-color" content="#000000" />
         <meta name="keywords" content="한신콘설탄트" />
         <meta name="author" content="sanguneo, juno" />
+        <style>
+          p{order:1px}
+          #justify{text-align:justify;}
+        </style>
       </Head>
       <body>
         <Main />
