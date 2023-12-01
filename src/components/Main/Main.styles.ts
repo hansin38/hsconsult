@@ -36,11 +36,10 @@ export const SectionTitle = styled.h2<{ largeGap?: boolean }>`
 `;
 
 export const SectionDescription = styled.div<{ color?: string }>`
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 24px;
-  text-align: justify;
   ${({ color }) => (color ? `color: ${color};` : '')}
 `;
 
