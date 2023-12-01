@@ -36,7 +36,7 @@ export const SectionTitle = styled.h2<{ largeGap?: boolean }>`
 `;
 
 export const SectionDescription = styled.div<{ color?: string }>`
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 24px;
@@ -56,6 +56,7 @@ export const SectionBodyItem = styled(Link)`
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
+    text-align: justify;
   }
   & > div:last-of-type {
     font-size: 16px;
