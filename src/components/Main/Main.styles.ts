@@ -62,6 +62,7 @@ export const SectionBodyItem = styled(Link)`
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    text-align: justify;
   }
 `;
 
