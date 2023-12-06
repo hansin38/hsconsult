@@ -27,13 +27,14 @@ export const INITIAL_OVERVIEW_DATA: ITable = {
     },
     {
       id: 1,
-      title: '1979년 12월 10일',
+      title: '1979년 12월 10일', 
     },
     {
       id: 1,
-      title: ()=>parse('본사) 부산광역시 중구 고가길32 (보수동1가)<br>' +
-        'TEL. 051-254-8141 FAX. 051-254-8648 서울지사) 서울특별시 송파구 가락로240 (방이동)<br>' +
-        'TEL. 02-417-6761 FAX. 02-417-3302'),
+      title: ()=>parse( '본사) 부산광역시 중구 고가길32 (보수동1가)<br>' + 
+      'TEL. 051-254-8141 FAX. 051-254-8648<br><br>' +
+      '서울지사) 서울특별시 송파구 가락로240 (방이동) <br>' +
+      'TEL. 02-417-6761 FAX. 02-417-3302'),
     },
     {
       id: 1,
@@ -41,10 +42,10 @@ export const INITIAL_OVERVIEW_DATA: ITable = {
     },
     {
       id: 1,
-      title: ()=>parse('한국엔지니어링협회 : 전기설비, 정보통신, 철도신호<br>' +
-        '한국전기기술인협회 : 종합설계업, 종합감리업<br>' +
+      title: ()=>parse('한국엔지니어링협회 : 전기설비, 정보통신, 철도신호<br><br>' +
+        '한국전기기술인협회 : 종합설계업, 종합감리업<br><br>' +
         '부산광역시 : 철도시설 안전진단 전문기관(정보통신)<br>' +
-        '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소방시설업(일반소방시설설계업,전기)<br>' +
+        '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소방시설업(일반소방시설설계업,전기)<br><br>' +
         '한국전기공사협회 : 전기공사업'),
     },
   ],
