@@ -4,7 +4,7 @@ import { Logo } from '@/components/svg/Logo';
 import { Contacts, Copyright, Container } from './.styles';
 
 
-const  = (): React.ReactElement => {
+const Footer = (): React.ReactElement => {
   const router = useRouter();
   return (
     <Container>
@@ -19,4 +19,4 @@ const  = (): React.ReactElement => {
   );
 };
 
-export default ;
+export default Footer ;
