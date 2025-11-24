@@ -1,0 +1,12 @@
+"use strict";(()=>{var e={};e.id=3731,e.ids=[3731],e.modules={145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},3610:e=>{e.exports=import("@vercel/postgres")},498:(e,t,a)=>{a.a(e,async(e,s)=>{try{a.r(t),a.d(t,{config:()=>c,default:()=>o,routeModule:()=>l});var r=a(9163),n=a(6037),u=a(7730),i=a(9851),d=e([i]);i=(d.then?(await d)():d)[0];let o=(0,u.l)(i,"default"),c=(0,u.l)(i,"config"),l=new r.PagesAPIRouteModule({definition:{kind:n.x.PAGES_API,page:"/api/inquiry/[id]",pathname:"/api/inquiry/[id]",bundlePath:"",filename:""},userland:i});s()}catch(e){s(e)}})},9851:(e,t,a)=>{a.a(e,async(e,s)=>{try{a.r(t),a.d(t,{default:()=>handler});var r=a(3610),n=a(8746),u=e([r,n]);[r,n]=u.then?(await u)():u;let doGet=async(e,t)=>{let{id:a}=e.query,{rows:s}=await r.sql`
+SELECT * FROM inquiry WHERE id = ${a};
+`;return 0===s.length?t.status(404).json({status:"error",data:"Not Found"}):t.status(200).json({status:"success",data:s[0]})},doPatch=async(e,t)=>{let{id:a}=e.query,s=e.body.update.map(([e,t])=>`${e} = ${t}`).join(", "),{rows:n}=await r.sql`
+UPDATE inquiry
+${s}
+WHERE id = ${a};
+`;return 0===n.length?t.status(404).json({status:"error",data:"Not Found"}):t.status(200).json({status:"success",data:n[0]})},doDelete=async(e,t)=>{let{id:a}=e.query;return await r.sql`
+DELETE FROM inquiry WHERE id = ${a};
+`,t.status(200).json({status:"success"})};async function handler(e,t){if(!e.query.id||Number.isNaN(Number(e.query.id)))return t.status(400).json({status:"error",data:"Bad Request"});switch(e.method.toUpperCase()){case"GET":return doGet(e,t);case"PATCH":return doPatch(e,t);case"DELETE":return doDelete(e,t);case"PUT":return(0,n.default)(e,t)}return t.status(405).end()}s()}catch(e){s(e)}})},8746:(e,t,a)=>{a.a(e,async(e,s)=>{try{a.r(t),a.d(t,{default:()=>handler});var r=a(3610),n=e([r]);async function handler(e,t){if("PUT"!==e.method.toUpperCase())return t.status(400).end();let{content:a,name:s,email:n,phone:u}=e.body,i=await r.sql`
+INSERT INTO inquiry (timestamp, content, name, email, phone)
+VALUES (${Math.floor(new Date().getTime()/1e3)}, ${a}, ${s}, ${n}, ${u});
+`;return t.status(200).json({status:"success",data:i})}r=(n.then?(await n)():n)[0],s()}catch(e){s(e)}})}};var t=require("../../../webpack-api-runtime.js");t.C(e);var __webpack_exec__=e=>t(t.s=e),a=t.X(0,[5685],()=>__webpack_exec__(498));module.exports=a})();

@@ -4,10 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "next dev -p 3002",
-        "build": "cross-env NODE_PATH=src react-scripts build",
-        "start": "cross-env NODE_PATH=src react-scripts start",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
+        "build": "next build",
         "lint": "next lint",
         "comp": "node compgen.js",
         "preinstall": "npx only-allow pnpm",
