@@ -1,8 +1,0 @@
-"use strict";(()=>{var e={};e.id=2787,e.ids=[2787],e.modules={145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},3610:e=>{e.exports=import("@vercel/postgres")},4673:(e,r,a)=>{a.a(e,async(e,t)=>{try{a.r(r),a.d(r,{config:()=>l,default:()=>d,routeModule:()=>c});var u=a(9163),s=a(6037),i=a(7730),n=a(715),o=e([n]);n=(o.then?(await o)():o)[0];let d=(0,i.l)(n,"default"),l=(0,i.l)(n,"config"),c=new u.PagesAPIRouteModule({definition:{kind:s.x.PAGES_API,page:"/api/inquiry",pathname:"/api/inquiry",bundlePath:"",filename:""},userland:n});t()}catch(e){t(e)}})},715:(e,r,a)=>{a.a(e,async(e,t)=>{try{a.r(r),a.d(r,{default:()=>handler});var u=a(3610),s=e([u]);async function handler(e,r){if("GET"!==e.method)return r.status(405).end();if(!e.query.page||Number.isNaN(Number(e.query.page))||0>=Number(e.query.page))return r.status(400).json({status:"error",data:"Bad Request"});let{limit:a=10,page:t}=e.query,[{rows:[{count:s}]},{rows:i}]=await Promise.all([u.sql`
-    SELECT COUNT(*) FROM inquiry;
-`,u.sql`
-  SELECT * FROM inquiry
-  ORDER BY id DESC
-  LIMIT ${Number(a)}
-  OFFSET ${Number(a)*(Number(t)-1)};
-`]);return r.status(200).json({status:"success",data:{limit:Number(a),page:Number(t),list:i,count:i.length,total:Number(s)}})}u=(s.then?(await s)():s)[0],t()}catch(e){t(e)}})}};var r=require("../../webpack-api-runtime.js");r.C(e);var __webpack_exec__=e=>r(r.s=e),a=r.X(0,[5685],()=>__webpack_exec__(4673));module.exports=a})();

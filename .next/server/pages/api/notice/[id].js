@@ -1,9 +1,0 @@
-"use strict";(()=>{var e={};e.id=9364,e.ids=[9364],e.modules={145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},3610:e=>{e.exports=import("@vercel/postgres")},2282:(e,t,a)=>{a.a(e,async(e,s)=>{try{a.r(t),a.d(t,{config:()=>c,default:()=>d,routeModule:()=>l});var r=a(9163),n=a(6037),u=a(7730),i=a(4643),o=e([i]);i=(o.then?(await o)():o)[0];let d=(0,u.l)(i,"default"),c=(0,u.l)(i,"config"),l=new r.PagesAPIRouteModule({definition:{kind:n.x.PAGES_API,page:"/api/notice/[id]",pathname:"/api/notice/[id]",bundlePath:"",filename:""},userland:i});s()}catch(e){s(e)}})},4643:(e,t,a)=>{a.a(e,async(e,s)=>{try{a.r(t),a.d(t,{default:()=>handler});var r=a(3610),n=e([r]);r=(n.then?(await n)():n)[0];let doGet=async(e,t)=>{let{id:a}=e.query,{rows:s}=await r.sql`
-SELECT * FROM notice WHERE id = ${a};
-`;return 0===s.length?t.status(404).json({status:"error",data:"Not Found"}):t.status(200).json({status:"success",data:s[0]})},doPatch=async(e,t)=>{let{id:a}=e.query,s="string"==typeof e.body?JSON.parse(e.body):e.body,{rows:n}=await r.sql`
-UPDATE notice
-SET title = ${s.title}, content = ${s.content}
-WHERE id = ${a};
-`;return t.status(200).json({status:"success",data:n[0]})},doDelete=async(e,t)=>{let{id:a}=e.query;return await r.sql`
-DELETE FROM notice WHERE id = ${a};
-`,t.status(200).json({status:"success"})};async function handler(e,t){if(!e.query.id||Number.isNaN(Number(e.query.id)))return t.status(400).json({status:"error",data:"Bad Request"});switch(e.method.toUpperCase()){case"GET":return doGet(e,t);case"PATCH":return doPatch(e,t);case"DELETE":return doDelete(e,t)}return t.status(405).end()}s()}catch(e){s(e)}})}};var t=require("../../../webpack-api-runtime.js");t.C(e);var __webpack_exec__=e=>t(t.s=e),a=t.X(0,[5685],()=>__webpack_exec__(2282));module.exports=a})();

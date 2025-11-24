@@ -1,1 +1,0 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{"/field/architecture/[tab]":[],"/field/construction":[],"/field/architecture":[],"/field/supervision":[],"/field/supervision/[tab]":[],"/":[]},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}';
