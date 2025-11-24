@@ -1,20 +1,18 @@
-import React from 'react';
-
 export interface ITable {
-  header: ITableHeader[];
-  rows: ITableRow[];
-  align: 'vertical' | 'horizontal';
+    header: ITableHeader[];
+    rows: ITableRow[];
+    align: 'vertical' | 'horizontal';
 }
 interface ITableRow {
-  id: number;
-  [key: string]: any;
+    id: number;
+    [key: string]: any;
 }
 
 interface ITableHeader {
-  title: string;
-  width?: string;
+    title: string;
+    width?: string;
 }
 
 export interface ITableProps {
-  data: ITable;
+    data: ITable;
 }
