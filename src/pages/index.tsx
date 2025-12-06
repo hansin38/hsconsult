@@ -1,5 +1,3 @@
-import React from 'react';
-import type { NextPage } from 'next';
 import { useQuery } from 'react-query';
 import Layout from '@/components/layout/Layout';
 import {
@@ -21,8 +19,9 @@ import { TArticle } from '@/shared/types/api.types';
 import { getPage } from '@/shared/apis/appApi';
 import ArticleList from '@/components/ArticleList/ArticleList';
 
-const Home: NextPage = (): React.ReactElement => {
+const Home = () => {
     const queryData = useQuery(['notice', 1], () => getPage({ table: 'notice', limit: 10, page: Number(1) }));
+
     return (
         <Layout transparentHeader>
             <CarouselSection>
@@ -37,7 +36,7 @@ const Home: NextPage = (): React.ReactElement => {
                     성공적으로 이끌어 왔습니다.
                 </SectionDescription>
                 <SectionBody>
-                    <SectionBodyItem href={'/intro/hello'}>
+                    <SectionBodyItem href="/field/architecture">
                         <img src="/images/architecture_sec.webp" alt="" />
                         <div>설계분야</div>
                         <div>
@@ -47,7 +46,7 @@ const Home: NextPage = (): React.ReactElement => {
                             더더욱 발전시킬 것입니다.
                         </div>
                     </SectionBodyItem>
-                    <SectionBodyItem href={'/field/construction'}>
+                    <SectionBodyItem href="/field/supervision/electrical-field">
                         <img src="/images/supervision_sec.webp" alt="" />
                         <div>감리분야</div>
                         <div>
@@ -59,7 +58,7 @@ const Home: NextPage = (): React.ReactElement => {
                             </p>
                         </div>
                     </SectionBodyItem>
-                    <SectionBodyItem href={'/field/supervision'}>
+                    <SectionBodyItem href="/field/construction">
                         <img src="/images/rail_sec.webp" alt="" />
                         <div>철도시공분야</div>
                         <div>
