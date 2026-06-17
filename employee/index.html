@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평생 무료 연장근로 관리 시스템 V5.8</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-section" class="login-box">
+    <h3>연장근로 시스템 로그인</h3>
+    <p style="font-size: 12px; color: #666;">사원 확인을 위해 이름과 휴대폰 번호를 입력하세요.</p>
+    <input type="text" id="login-name" placeholder="이름 입력 (예: 홍길동)" required>
+    <input type="password" id="login-phone" placeholder="휴대폰 번호 (- 제외 입력)" required>
+    <button onclick="handleLogin()">시스템 접속</button>
+</div>
+
+<div id="main-system" class="container">
+    <div class="user-info"><span id="user-display"></span>님 환영합니다.</div>
+    <h2>근로자 관리 시스템 (연장근로신청)</h2>
+
+    <div class="tabs">
+        <button id="btn-submit-tab" class="tab-btn active" onclick="openTab('submit-tab', this)">연장근로 등록/제출</button>
+        <button id="btn-history-tab" class="tab-btn" onclick="openTab('history-tab', this); loadMyHistory();">제출내역 조회</button>
+    </div>
+
+    <div id="submit-tab" class="tab-content active">
+        <div class="dashboard">
+            <div class="dash-item"><h4>고정 OT 기본 시간</h4><p style="color: #495057;">65 시간</p></div>
+            <div class="dash-item"><h4>당월 누적 연장근로</h4><p id="total-hours" style="color: var(--primary-color);">0 시간</p></div>
+            <div class="dash-item"><h4>초과 수당 여부</h4><div id="ot-status" class="status-badge under-ot">고정 OT 범위 내</div></div>
+        </div>
+
+        <form id="overtime-form" onsubmit="submitForm(event)">
+            <table id="ot-table">
+                <thead>
+                    <tr>
+                        <th width="12%">일자</th>
+                        <th width="12%">근무 형태</th>
+                        <th width="12%">시작 시간</th>
+                        <th width="12%">종료 시간</th>
+                        <th width="32%">📋 업무 상세 기재 (용역명 등)</th>
+                        <th width="12%">인정 시간</th>
+                        <th width="8%">삭제</th>
+                    </tr>
+                </thead>
+                <tbody id="ot-tbody"></tbody>
+            </table>
+            <div class="btn-container">
+                <button type="button" class="btn btn-add" onclick="addRow()">+ 행 추가</button>
+                <button type="submit" class="btn btn-submit">근로일지 제출</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="history-tab" class="tab-content">
+        <h3>나의 제출 내역 (실시간 구글 DB 연동)</h3>
+        <div id="history-container">조회 중...</div>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
