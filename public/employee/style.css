@@ -1,0 +1,322 @@
+:root { 
+    --primary-color: #007bff; 
+    --danger-color: #dc3545; 
+    --success-color: #28a745; 
+    --gray-color: #f8f9fa; 
+}
+
+body { 
+    font-family: 'Malgun Gothic', sans-serif; 
+    margin: 20px; 
+    /* 🚀 하단에 300px의 넉넉한 황금 여백을 확보하여 드롭다운이 열려도 스크롤이 부드럽고 갇히지 않습니다 */
+    padding-bottom: 300px; 
+    background-color: #f4f6f9; 
+    color: #333; 
+}
+
+.container { 
+    max-width: 1150px; 
+    margin: 0 auto; 
+    background: #fff; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+h2 { 
+    text-align: center; 
+    color: #222; 
+    margin-bottom: 30px; 
+}
+        
+/* 로그인 섹션 */
+.login-box { 
+    max-width: 400px; 
+    margin: 100px auto; 
+    padding: 30px; 
+    background: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    text-align: center; 
+}
+
+.login-box input { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+.login-box button { 
+    width: 100%; 
+    padding: 12px; 
+    background: var(--primary-color); 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+/* 메인 페이지 컴포넌트 */
+#main-system { 
+    display: none; 
+}
+
+.tabs { 
+    display: flex; 
+    border-bottom: 2px solid #ddd; 
+    margin-bottom: 20px; 
+}
+
+.tab-btn { 
+    padding: 12px 30px; 
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: #666; 
+}
+
+.tab-btn.active { 
+    color: var(--primary-color); 
+    border-bottom: 3px solid var(--primary-color); 
+    margin-bottom: -2px; 
+}
+
+.tab-content { 
+    display: none; 
+}
+
+.tab-content.active { 
+    display: block; 
+}
+
+.dashboard { 
+    display: flex; 
+    justify-content: space-between; 
+    background: var(--gray-color); 
+    padding: 20px; 
+    border-radius: 6px; 
+    margin-bottom: 20px; 
+    border: 1px solid #dee2e6; 
+}
+
+.dash-item { 
+    text-align: center; 
+    flex: 1; 
+}
+
+.dash-item h4 { 
+    margin: 0 0 10px 0; 
+    color: #555; 
+}
+
+.dash-item p { 
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.status-badge { 
+    display: inline-block; 
+    padding: 5px 15px; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    margin-top: 5px; 
+    font-weight: bold; 
+}
+
+.under-ot { 
+    background-color: #e2f0d9; 
+    color: var(--success-color); 
+}
+
+.over-ot { 
+    background-color: #fce4d6; 
+    color: var(--danger-color); 
+}
+        
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+    table-layout: fixed; 
+}
+
+th, td { 
+    border: 1px solid #dee2e6; 
+    padding: 12px 8px; 
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+th { 
+    background-color: #f1f3f5; 
+    font-weight: bold; 
+    font-size: 14px; 
+}
+        
+input[type="date"] { 
+    width: 100%; 
+    padding: 8px 4px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 13px; 
+}
+        
+/* 📏 대표님 전용 10줄 스크롤 컨테이너 */
+.custom-select-wrapper { 
+    position: relative; 
+    width: 100%; 
+    text-align: left; 
+}
+
+.selected-value { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 13px; 
+    background: #fff; 
+    cursor: pointer;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.selected-value::after { 
+    content: '▼'; 
+    font-size: 9px; 
+    color: #888; 
+}
+        
+.select-options-box { 
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    width: 100%; 
+    background: #fff; 
+    border: 1px solid #999; 
+    border-radius: 4px; 
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+    max-height: 260px; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+}
+
+.select-options-box div { 
+    padding: 8px 10px; 
+    font-size: 13px; 
+    cursor: pointer; 
+}
+
+.select-options-box div:hover { 
+    background-color: #f1f3f5; 
+    color: var(--primary-color); 
+    font-weight: bold; 
+}
+
+input[type="text"].work-reason { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    text-align: left; 
+    font-size: 13px; 
+}
+
+.type-text { 
+    font-weight: bold; 
+    font-size: 13px; 
+    display: block; 
+    word-break: keep-all; 
+}
+
+.type-weekday { 
+    color: #333333; 
+} 
+
+.type-weekend { 
+    color: var(--danger-color); 
+} 
+
+.btn-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.btn { 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    font-size: 14px; 
+}
+
+.btn-add { 
+    background-color: #6c757d; 
+    color: white; 
+}
+
+.btn-submit { 
+    background-color: var(--primary-color); 
+    color: white; 
+    padding: 12px 40px; 
+    font-size: 16px; 
+}
+        
+.btn-delete { 
+    background-color: var(--danger-color); 
+    color: white; 
+    width: 100%; 
+    padding: 7px 0; 
+    font-size: 12px; 
+    border: none; 
+    border-radius: 4px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.history-list { 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+}
+
+.status-text { 
+    font-weight: bold; 
+    float: right; 
+}
+
+.user-info { 
+    text-align: right; 
+    margin-bottom: 10px; 
+    font-weight: bold; 
+    color: #555; 
+}
+        
+.row-calculated-hours { 
+    font-weight: bold; 
+    color: #222; 
+    font-size: 14px; 
+}
+
+.unit-text { 
+    font-size: 12px; 
+    color: #666; 
+    margin-left: 2px; 
+}
